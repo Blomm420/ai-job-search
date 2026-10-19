@@ -354,8 +354,16 @@ This proactive suggestion step helps users discover career paths they might not 
 
 Once data collection is complete, generate or finish populating the following files. **For Path A**, the seven skill files are already populated by Step A7; check each before writing and skip if its content is no longer placeholder text.
 
+### Contact details stay out of git
+
+This fork is public. Do not write a real name, phone, email, street address, or personnummer into any tracked file (`CLAUDE.md`, the skill files, `cv/main_example.tex`, `05-cv-templates.md`, `06-cover-letter-templates.md`). Leave these tokens in place: `[YOUR_NAME]`, `[YOUR_EMAIL]`, `[YOUR_PHONE]`, `[YOUR_ADDRESS]`, `[FIRST_NAME]`, `[LAST_NAME]`, `[YOUR_LINKEDIN_URL]`, `[YOUR_GITHUB_URL]`.
+
+Ask the user to copy `profile.local.example.md` to `profile.local.md` and fill that in locally. `profile.local.md` is gitignored. Drafts read it and substitute contact details only into generated files (`cv/main_<company>_<role>.tex`, `cover_letters/cover_<company>_<role>.tex`), which are also gitignored. If `profile.local.md` is missing, leave the tokens and say so. Never store a personnummer anywhere in the repo, including `profile.local.md`.
+
+Non-contact facts (work, education, location area, languages, deal-breakers) still go in the tracked profile files.
+
 ### 1. Update `CLAUDE.md`
-Replace all `[PLACEHOLDER]` tokens with the user's actual information. Keep the structure, workflow, and verification checklist intact.
+Replace non-contact `[PLACEHOLDER]` tokens with the user's actual information. Keep `[YOUR_NAME]`, `[YOUR_PHONE]`, `[YOUR_EMAIL]`, `[YOUR_ADDRESS]`, and `[YOUR_LINKEDIN_URL]` as tokens; those values live in `profile.local.md`. Keep the structure, workflow, and verification checklist intact.
 
 ### 2. Populate `01-candidate-profile.md` *(Path B and C; skip if Path A populated it)*
 Write the full candidate profile with structured sections: Identity (including Languages, with levels), Education, Professional Experience, Independent Projects, Technical Skills, Publications, Awards, References.
@@ -372,16 +380,16 @@ Replace skill match areas with the user's actual skills:
 Update career goals and motivation filters with their actual preferences.
 
 ### 5. Update `05-cv-templates.md` *(Path B and C; skip if Path A populated it)*
-Add role-specific profile statement templates based on their background, and personalise the contact block inside the file's LaTeX template: replace `[FIRST_NAME]`, `[LAST_NAME]`, `[YOUR_ADDRESS]`, `[YOUR_PHONE]`, `[YOUR_EMAIL]`, `[YOUR_LINKEDIN_URL]` and `[YOUR_GITHUB_URL]` (and `[YOUR_NAME]` in the PDF title) with their actual details. Check this block whichever path ran - Path A extracts profile statements from documents, not the contact block. `/apply` builds every tailored CV from this template, so a placeholder left here reaches a compiled document.
+Add role-specific profile statement templates based on their background. Do not personalise the contact block in this tracked file. The tokens `[FIRST_NAME]`, `[LAST_NAME]`, `[YOUR_ADDRESS]`, `[YOUR_PHONE]`, `[YOUR_EMAIL]`, `[YOUR_LINKEDIN_URL]` and `[YOUR_GITHUB_URL]` (and `[YOUR_NAME]` in the PDF title) stay as tokens. Real contact details are read from gitignored `profile.local.md` when a CV is drafted, and written only into the gitignored `cv/main_<company>_<role>.tex`. Check this block whichever path ran - Path A extracts profile statements from documents, not the contact block.
 
 ### 6. Update `06-cover-letter-templates.md` *(all paths - Path A does not fill this block)*
-Personalise the contact line and the signature inside the file's LaTeX template: replace `[YOUR_NAME]`, `[YOUR_EMAIL]`, `[YOUR_PHONE]` and `[YOUR_LINKEDIN_URL]` in the `\namesection{}` line, and `[YOUR_NAME]` in `\signature{}`. Path A merges only structural patterns (openings, bullets, closings) into this file, never the contact block. `/apply` compiles every cover letter from this template.
+Do not personalise the contact line or the signature in this tracked file. Leave `[YOUR_NAME]`, `[YOUR_EMAIL]`, `[YOUR_PHONE]` and `[YOUR_LINKEDIN_URL]` in the `\namesection{}` line, and `[YOUR_NAME]` in `\signature{}`. Real values come from gitignored `profile.local.md` and are substituted only into the generated cover letter. Path A merges only structural patterns (openings, bullets, closings) into this file, never the contact block. `/apply` compiles every cover letter from this template. Cover letters for this fork are Swedish (see CLAUDE.md `Cover letter language:`).
 
 ### 7. Update `07-interview-prep.md` *(Path B and C; skip if Path A populated it)*
 Create STAR examples from their actual experience (at least 3-4 examples). Path A leaves STAR stubs under "## STAR Candidates (Complete Manually)" rather than full examples; if any stubs are present, mention them in Step 4 so the user knows to flesh them out.
 
 ### 8. Update `cv/main_example.tex`
-Replace placeholder personal data with their actual name, contact info, and add their education and most recent experience entries.
+Keep the contact placeholders (`\name{[First]}{[Last]}`, address, phone, `\email{[your.email@example.com]}`). Do not write a real name, phone, email, or street into this tracked file. Add education and experience from stated facts only. Do not invent dates or duties.
 
 ### 9. Generate `.claude/skills/job-scraper/search-queries.md`
 Replace all placeholder tokens in the search queries file with the user's actual information from Section 9 (or the equivalent follow-up questions in Path A's Step A7):
@@ -413,10 +421,11 @@ Present a summary:
 > - `cv/main_example.tex` - Your LaTeX CV template
 > - `.claude/skills/job-scraper/search-queries.md` - Job search queries for `/scrape`
 >
-> **Privacy note:** the files above now contain your personal data and are *tracked by git*.
-> A GitHub fork of the template is always public (forks of public repos cannot be made
-> private), so do not push these commits to a fork. Keep them local, or push to a private
-> repository instead - see SETUP.md section 8 for the private-remote setup.
+> **Privacy note:** non-contact profile facts in the files above are tracked by git.
+> Name, phone, email, street address, and personnummer must not be among them. Those
+> belong in gitignored `profile.local.md` (copy `profile.local.example.md`). A GitHub
+> fork of the template is always public (forks of public repos cannot be made private).
+> Do not push contact details. See README.sv.md and SETUP.md section 8.
 >
 > **Try it out:**
 > - Run `/scrape` to search for matching jobs right now

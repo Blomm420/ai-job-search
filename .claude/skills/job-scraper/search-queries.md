@@ -10,71 +10,85 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 **Language scope:** write every query category in every language listed in your CLAUDE.md Languages table (typically 1-2, sometimes more). A posting requiring a language you have *not* declared, as a job condition, is excluded before scoring; a posting requiring a *higher level* than you declared in a language you *do* work in is flagged for your own judgment, not excluded — see `04-job-evaluation.md`'s Language Gate, the single source of truth for this rule. Translate each category's keywords rather than machine-translating word-for-word (e.g. "Frontend Developer" -> "Desarrollador Frontend", not a literal word-for-word translation) if you work in more than one language.
 
+## This fork's market
+
+Queries are in Swedish, the only declared language. Area: Växjö / Norrhult, Kronobergs län. Targets: butik, städ, kök, restaurang, service. Deltid and heltid both count. Drop anything that requires a driver's license or a car.
+
+Enabled CLI that fits: `linkedin-search`, personal use only, low volume. Pass the location explicitly, for example `--location "Växjö, Sweden"`. Run a separate call for Norrhult when the first call is only Växjö.
+
+```bash
+bun run .agents/skills/linkedin-search/cli/src/cli.ts search -q "butiksmedarbetare" -l "Växjö, Sweden" --jobage 14 --format json
+```
+
+`freehire-search` is enabled in this repo and covers tech roles. Skip its hits unless the posting is actually butik, städ, kök, restaurang or service.
+
+The four Danish portals (`jobindex-search`, `jobnet-search`, `jobbank-search`, `jobdanmark-search`) ship with `enabled: false`. Leave them disabled.
+
+No CLI is shipped for Arbetsförmedlingen / Platsbanken. Use the `site:` lines below, or `/add-portal` on the board you want. Read the generated CLI before you run it.
+
 ## Search Sites
 
-Primary (your market's job boards - scaffold one with `/add-portal`):
-- **[YOUR_JOB_BOARD]** - your market's largest general job board
-- **linkedin.com/jobs** - LinkedIn job listings (filter: [YOUR_COUNTRY] / [YOUR_CITY]); also covered by `linkedin-search` CLI
-- **[YOUR_INDUSTRY_JOB_BOARD]** - a niche/industry board for your field (optional)
-- **[YOUR_ADDITIONAL_JOB_BOARD]** - another major board for your market (optional)
+Primary:
+- **arbetsformedlingen.se / Platsbanken** - Sweden's public job board. No shipped CLI; WebSearch fallback below.
+- **linkedin.com/jobs** - also covered by `linkedin-search` (`-l "Växjö, Sweden"`)
 
-Secondary (company career pages via Google):
-- Direct Google searches with `site:` filters for known target companies
+Secondary (company career pages and other boards via WebSearch, not shipped CLIs):
+- `site:` searches for a named employer once a posting is in play
+- Other Swedish boards only as a WebSearch fallback (for example Indeed or Blocket Jobb). Do not treat them as installed CLIs.
 
 ## Query Categories
 
-Queries are grouped by priority. Write **each category in every language from your Languages table** (see Language scope above). Combine each query with your location terms (e.g. your city, region, or metro area) where the site supports it.
+Queries are grouped by priority. This profile has one working language, Swedish, so each category is written in Swedish. Combine each query with Växjö, Norrhult, or Kronoberg.
 
-**Organize by function, not job title.** The same underlying work carries different titles across companies and markets (a "Data Scientist" role at one employer may be posted as "Insights Analyst" or "Data Consultant" at another). Name each priority category after the function it covers, and list several plausible job titles as query variants within that category rather than betting an entire priority tier on one exact title string.
+**Organize by function, not job title.** The same work is posted under several titles. Each priority below is a function, with several titles as variants.
 
-### Priority 1: [YOUR_PRIMARY_ROLE_TYPE]
+### Priority 1: Butik och service
 
-These match your strongest and most desired career direction.
-
-```
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_PRIMARY_JOB_TITLE_2]" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_KEY_SKILL]" [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_PRIMARY_JOB_TITLE_1]" [YOUR_COUNTRY]
-```
-
-### Priority 2: [YOUR_DOMAIN_EXPERTISE]
-
-These match your domain expertise.
+The main target. No documented shop experience; these are search targets, not proof of fit.
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] OR [YOUR_REGION]
-site:[YOUR_JOB_BOARD] [YOUR_DOMAIN_KEYWORD_2] [YOUR_COUNTRY]
-site:linkedin.com/jobs [YOUR_DOMAIN_KEYWORD_1] [YOUR_CITY] [YOUR_COUNTRY]
+site:arbetsformedlingen.se butiksmedarbetare Växjö
+site:arbetsformedlingen.se butiksbiträde Kronoberg
+site:arbetsformedlingen.se "service" deltid Växjö
+site:linkedin.com/jobs "butiksmedarbetare" Växjö
 ```
 
-### Priority 3: [YOUR_ADJACENT_ROLE_TYPE]
-
-Adjacent roles you could pivot into.
+### Priority 2: Städ
 
 ```
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_1]" [YOUR_KEY_SKILL] [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "[YOUR_ADJACENT_TITLE_2]" [YOUR_KEY_SKILL] [YOUR_CITY]
+site:arbetsformedlingen.se lokalvårdare Växjö
+site:arbetsformedlingen.se städare Kronoberg
+site:arbetsformedlingen.se städ Norrhult OR Växjö
+site:linkedin.com/jobs städare Växjö
 ```
 
-### Priority 4: Broader Technical / Consulting
-
-Wider net for general technical roles.
+### Priority 3: Kök och restaurang
 
 ```
-site:[YOUR_JOB_BOARD] [YOUR_KEY_SKILL] developer [YOUR_CITY]
-site:linkedin.com/jobs "[YOUR_KEY_SKILL] developer" [YOUR_CITY]
-site:[YOUR_JOB_BOARD] "technical consultant" [YOUR_DOMAIN] [YOUR_CITY]
+site:arbetsformedlingen.se köksbiträde Växjö
+site:arbetsformedlingen.se diskare OR restaurangbiträde Kronoberg
+site:arbetsformedlingen.se servering OR café Växjö
+site:linkedin.com/jobs "köksbiträde" Växjö
+```
+
+### Priority 4: Omsorg (documented experience, not the stated first choice)
+
+Only surface these as adjacent. The documented job is skötare on a dementia ward. Do not describe it as the goal of the search.
+
+```
+site:arbetsformedlingen.se skötare demens Kronoberg
+site:arbetsformedlingen.se vårdbiträde Växjö
+site:linkedin.com/jobs skötare Växjö
 ```
 
 ## Location Filter
 
-When evaluating results, verify the job location is within reasonable commute distance from your home. Define acceptable areas:
-- [YOUR_CITY] and surrounding areas
-- [ACCEPTABLE_AREA_1]
-- [ACCEPTABLE_AREA_2]
-- [BORDERLINE_AREA] (borderline - ~X min by transit)
-- [TOO_FAR_AREA] (too far)
+Keep a job only when the workplace is a reasonable kollektivtrafik trip from Växjö or Norrhult. There is no driver's license and no car.
+- Växjö
+- Norrhult
+- Other places in Kronobergs län that kollektivtrafik actually reaches from one of those two (check; do not assume)
+- A posting that requires körkort or egen bil (exclude)
+- A workplace that cannot be reached without a car, or that requires moving (exclude)
 
 ## Language Filter
 

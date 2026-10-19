@@ -2,6 +2,8 @@
 
 This folder holds your actual career documents. The `/setup` command reads everything here and uses it to populate the candidate skill files under `.claude/skills/job-application-assistant/`. It is safe to re-run `/setup` as you add new documents — it merges intelligently and will never overwrite existing content without asking you first.
 
+**Svenska:** lägg ditt riktiga CV i `documents/cv/`. Innehållet här är gitignorerat. Namn, telefon, e-post och gatuadress hör hemma i `profile.local.md` i reporoten, inte i en committad fil. Se [README.sv.md](../README.sv.md). `/setup` ska inte skriva kontaktuppgifter till filer som git spårar.
+
 ---
 
 ## Folder Structure

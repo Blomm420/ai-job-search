@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** Svenska som modersmål. Skötare på demensavdelning (Forsagården, Forsa; bara titeln är dokumenterad). Utbildning: skogslinje på Ösby, hantverk/finsnickeri på NVU Fagersta.
+**Moderate match areas:** Servicejobb där den dokumenterade omsorgsrollen är ett ärligt argument, utan att döpas om till butiks- eller restaurangerfarenhet.
+**Weak match areas:** Ingen dokumenterad erfarenhet av butik, städ, kök eller restaurang. Inget körkort och ingen bil. Inga andra språk. Inga angivna verktyg, betyg, årtal eller detaljerade arbetsuppgifter.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Skötare, demensavdelning, omsorgsboende.
+**Moderate:** Annat personnära servicearbete, bara när brevet inte påstår att butik, städ, kök eller restaurang redan har gjorts.
+**Entry-level:** Butik, städ, kök, restaurang och övrig service. Det är målrollerna och de saknar dokumenterad erfarenhet.
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -96,6 +96,13 @@ Does the role and company culture match the behavioral profile?
 - Requires relocation: FAIL (deal-breaker)
 - Frequent international travel: FLAG (discuss with user)
 
+**This candidate:**
+- Home area is Växjö / Norrhult, Kronobergs län. No driver's license and no car.
+- PASS when the workplace is in that area and can be reached by kollektivtrafik. Do not assume a bus route; say when it still needs checking.
+- FAIL when the posting requires a driver's license (körkort) or access to a car.
+- FAIL when the workplace cannot be reached by public transport from Växjö or Norrhult, or requires moving.
+- Deltid and heltid both pass. Evening, weekend, or night requirements are not on record: FLAG and ask, do not assume.
+
 ### 5. Career Alignment & Motivation (0-100)
 Does this role advance career goals and contain tasks that energize?
 
@@ -107,19 +114,19 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Deltids- eller heltidsjobb inom butik, städ, kök, restaurang eller service
+- Arbetsplats som går att nå med kollektivtrafik från Växjö eller Norrhult
+- Inga vidare karriärmål är angivna. Hitta inte på ett femårsplan.
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: Inte angivet utöver de sökta jobben. Hitta inte på drivkrafter.
+- Tasks that drain: Inte angivet.
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Inte beskrivet. Fråga inte in det i brevet och hitta inte på en privatekonomi.
+- **Flexibility**: Deltid och heltid går båda bra. Kväll, helg och natt är inte angivet.
+- **Professional development**: Inte angivet.
 
 ### 6. Salary Benchmark (Optional)
 

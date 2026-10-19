@@ -21,6 +21,8 @@ build/
 
 # Personal data (never commit these)
 salary_data.json
+# Name, phone, email, street address. Copy profile.local.example.md locally.
+profile.local.md
 # Match at any depth: the job-scraper skill resolves `job_scraper/` relative to
 # its own directory, so these land at .claude/skills/job-scraper/job_scraper/*.
 # A rooted `job_scraper/...` pattern silently fails to match them.
@@ -34,6 +36,13 @@ linkedin_Profile.pdf
 # fetching service; the .env holding it must never be committed.
 .env
 .env.*
+
+# Real CV / letter exports dropped outside documents/ (PDF is already ignored)
+*.docx
+*.doc
+*.odt
+*.rtf
+*.pages
 
 # Personal photos and signatures
 *.jpg

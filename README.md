@@ -14,6 +14,8 @@
 
 An AI-powered job application framework built on [Claude Code](https://claude.com/claude-code). Fork it, fill in your profile, and let Claude evaluate job postings, tailor your CV, write cover letters, and prepare you for interviews.
 
+> **Den här förgreningen** är anpassad för jobbsök i Växjö/Norrhult (butik, städ, kök, restaurang, service). Installation, var CV och profil ska ligga, och arbetsflödena på svenska: [README.sv.md](README.sv.md). Kontaktuppgifter hör hemma i gitignorerade `profile.local.md`, inte i de spårade profilfilerna. Texten nedan beskriver upstream-ramverket.
+
 > Note: This is an independent open-source project and is not affiliated with, endorsed by, sponsored by, or maintained by Anthropic. Anthropic and Claude Code are referenced only to describe the toolchain this workflow uses.
 >
 > This project has **no affiliated cryptocurrency, token, or paid sponsorship program**. Anything claiming otherwise is unauthorized and should be treated as a scam. The only ways to support the project are the Ko-fi link below and contributing on GitHub.

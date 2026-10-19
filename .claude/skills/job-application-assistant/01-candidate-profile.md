@@ -4,70 +4,67 @@ framework_version: 1.1.1
 
 # Candidate Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all sections will be filled with your actual information -->
+<!-- Non-sensitive facts for this fork. Contact tokens stay placeholders. -->
+<!-- Real name, phone, email and street address go in gitignored profile.local.md. -->
+<!-- Do not invent dates, duties, grades, languages, licenses, or tools. -->
 
 ## Identity
 - **Name:** [YOUR_NAME]
-- **Location:** [YOUR_ADDRESS]
+- **Location:** Växjö / Norrhult, Kronobergs län, Sverige (ingen gatuadress här)
+- **Street address:** [YOUR_ADDRESS]
 - **Phone:** [YOUR_PHONE]
 - **Email:** [YOUR_EMAIL]
 - **LinkedIn:** [YOUR_LINKEDIN_URL]
 - **GitHub:** [YOUR_GITHUB_URL]
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **Constraints:** [YOUR_COMMUTE_OR_LOCATION_CONSTRAINTS]
+- **Personnummer:** lagras inte i repot, inte heller i `profile.local.md`
+- **Status:** Söker arbete, deltid eller heltid
+- **Constraints:** Inget körkort och ingen bil. Behöver kollektivtrafik från Växjö eller Norrhult. Söker butik, städ, kök, restaurang och servicejobb i det området.
 
 ### Languages
-<!-- Every language you can work in professionally, with your honest level. Used by the
-Language Gate in 04-job-evaluation.md and by job-scraper/search-queries.md's query-language
-generation. Omit any language you don't actually work in - an undeclared language is treated as
-a hard no, not a gap to smooth over. -->
+<!-- Only Swedish is declared. Do not add rows. -->
 
 | Language | Level | Notes |
 |----------|-------|-------|
-| [LANGUAGE] | [LEVEL, e.g. "Native" / "C2" / "B1/B2 (conversational)"] | [optional] |
+| Svenska | Modersmål | Enda angivna språket. Ett annat språkkrav i annonsen är ett hårt nej. |
 
 ## Education
 
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
-| [DEGREE] | [YEARS] | [INSTITUTION] | [TOPICS] |
+| Skogslinje | årtal ej angivet | Ösby | Skog. Inget betyg, examensarbete eller kurslista är angivet. |
+| Hantverk/finsnickeri | årtal ej angivet | NVU Fagersta | Hantverk och finsnickeri. Inget betyg eller kurslista är angivet. |
 
 ## Professional Experience
 
-### [JOB_TITLE] - [COMPANY] ([START] - [END])
-[LOCATION]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_1]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_2]
-- [RESPONSIBILITY_OR_ACHIEVEMENT_3]
+### Skötare, demensavdelning - Forsagården (datum ej angivet)
+Forsa
+- Arbetade som skötare på en demensavdelning.
+- Inga fler arbetsuppgifter, schemat, omfattningen eller resultat är dokumenterade. Lägg inte till några.
 
-<!-- Add more roles as needed -->
+<!-- Add more roles only when the candidate states them. Butik, städ, kök and restaurang are targets, not jobs held. -->
 
 ## Independent Projects
-<!-- Projects outside of employment: freelance, open source, personal -->
-- **[PROJECT_NAME]**: [DESCRIPTION]
+Inga angivna.
 
 ## Technical Skills
 
 ### Programming & ML
-- **[LANGUAGE]** ([PROFICIENCY]): [FRAMEWORKS_AND_LIBRARIES]
-- [OTHER_SKILLS]
+Inga angivna. Hitta inte på programmering, ramverk eller verktyg.
 
 ### Domain Expertise
-- [DOMAIN_1]
-- [DOMAIN_2]
+- Skötare på demensavdelning (Forsagården, Forsa). Bara rollen är dokumenterad.
+- Skogslinje (Ösby) och hantverk/finsnickeri (NVU Fagersta), utan angivna årtal eller betyg.
 
 ### Software & Tools
-- [TOOL_LIST]
+Inga angivna.
 
 ## Publications
-<!-- List peer-reviewed publications, if any -->
-1. [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL]. [DOI_LINK]
+Inga angivna.
 
 ## Awards
-- [AWARD] - [EVENT] ([YEAR])
+Inga angivna.
 
 ## References
-- [NAME], [TITLE], [COMPANY] ([EMAIL], [PHONE])
+Inga namngivna referenser. Skriv "Referenser lämnas på begäran." Hitta inte på namn, telefonnummer eller e-post.
 
-More references available upon request.
+Referenser lämnas på begäran.

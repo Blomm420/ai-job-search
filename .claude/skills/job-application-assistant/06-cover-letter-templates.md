@@ -156,9 +156,14 @@ Escape these wherever they appear in body text:
 - Tilde: `\textasciitilde{}`, caret: `\textasciicircum{}`, backslash: `\textbackslash{}`
 
 ### Non-English Cover Letters
-- Same template structure, just write content in the posting's language
-- Adjust date format to local convention
-- Adjust closing to local convention (e.g. "Med venlig hilsen," for Danish)
+- If CLAUDE.md sets `Cover letter language:`, write the letter in that language even when the posting is in another language. This profile sets **Swedish**.
+- If that line is absent, use the posting's language.
+- Adjust date format to local convention. For Swedish, pass an explicit date to `\currentdate`, for example `\currentdate{19 oktober 2026}`. Bare `\today` prints an English month when babel/polyglossia is not loaded.
+- Swedish closing: `Med vänlig hälsning,`
+- Swedish salutation: `Hej,` or `Hej [förnamn],` when a person is named. Do not use "To whom it may concern".
+- The letter is tailored to this employer and this role. Do not reuse paragraphs from another application.
+- Never invent qualifications. The only job on record is skötare on a dementia ward at Forsagården, Forsa. Education is skogslinje at Ösby and hantverk/finsnickeri at NVU Fagersta. No driver's license, no car, Swedish only, deltid or heltid. Butik, städ, kök, restaurang and service are targets, not previous jobs. No dates or duty lists exist; do not create them.
+- Danish example when the profile does not force Swedish: "Med venlig hilsen,"
 
 ## Checklist Before Finalizing
 - [ ] No em-dashes (use commas or periods instead)
@@ -169,8 +174,8 @@ Escape these wherever they appear in body text:
 - [ ] Company name and role are correct throughout
 - [ ] Date is current
 - [ ] Fits on one page
-- [ ] Language matches the job posting language
-- [ ] Salutation is appropriate (named person if possible)
+- [ ] Language is Swedish when the profile sets `Cover letter language: Swedish`; otherwise it matches the job posting
+- [ ] Salutation is `Hej,` or `Hej [förnamn],` for this profile (named person if possible)
 - [ ] Headline is engaging and specific, not generic
 
 ## Submission Guidelines (Best Practice)

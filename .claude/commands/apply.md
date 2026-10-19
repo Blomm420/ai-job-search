@@ -4,7 +4,7 @@ You are orchestrating a two-agent job application workflow. The job posting is p
 
 Follow these steps **exactly in order**. Do not skip steps.
 
-**Standing rule — write new facts back to the profile.** If the user confirms, corrects or supplies a fact that is not already in `01-candidate-profile.md` — a metric, a project detail, a skill, a scope correction — update that file in the same turn. Do not leave it living only in the conversation or in a draft.
+**Standing rule — write new facts back to the profile.** If the user confirms, corrects or supplies a fact that is not already in `01-candidate-profile.md` — a metric, a project detail, a skill, a scope correction — update that file in the same turn. Do not leave it living only in the conversation or in a draft. A name, phone, email, or street address is the exception: write those only to gitignored `profile.local.md`, never into a tracked file. Never write a personnummer into any file.
 
 This is not bookkeeping. A fact that exists only in chat **will be treated as unsupported by a later session and stripped from drafts as a fabrication.** Anything absent from the sources does not exist as far as future drafting is concerned, and the loss is silent — a real achievement quietly disappears from every subsequent CV.
 
@@ -108,6 +108,7 @@ Also read the most recent existing CV and cover letter files for concrete struct
 
 ### CV (`cv/main_<company>_<role><CV_EXT>`)
 - In the **CV language from the profile** (the `CV language:` line in CLAUDE.md's Identity section). When the profile does not set one, default to **English**. Never switch language per posting - the CV language is a profile-level choice, so all CVs stay consistent and reusable
+- Contact details come from gitignored `profile.local.md` (see `profile.local.example.md`). Do not copy a real name, phone, email, or street address back into tracked files. If `profile.local.md` is missing, leave the template tokens and tell the user. Never write a personnummer into any file.
 - Follow the moderncv/banking format from `05-cv-templates.md`
 - Tailor the profile statement and experience bullets to the specific role
 - Reframe skills and achievements to match job requirements
@@ -115,7 +116,7 @@ Also read the most recent existing CV and cover letter files for concrete struct
 - **Grounding Audit:** Before writing to disk, audit all tailored bullet points against the union of three sources: `.claude/skills/job-application-assistant/01-candidate-profile.md` + the master CV (`cv/main_example.tex`) + `CLAUDE.md`'s Candidate Profile section to verify that all dates, roles, and metrics match exactly (zero profile drift or fabrication).
 
 ### Cover Letter (`cover_letters/cover_<company>_<role><COVER_EXT>`)
-- **Match the language of the job posting** (Danish posting -> Danish cover letter, English posting -> English cover letter)
+- **Language:** If CLAUDE.md's Identity section sets `Cover letter language:`, write the letter in that language (this profile: Swedish) even when the posting is in another language. Tailor it to this job. Never invent qualifications, dates, or duties. If that line is absent, match the language of the job posting (Danish posting -> Danish cover letter, English posting -> English cover letter)
 - Follow the structure from `06-cover-letter-templates.md`
 - Use the `cover.cls` template
 - Tailor the opening paragraph to the specific role and company
@@ -264,6 +265,8 @@ python tools/verify_layout.py cover_letters/cover_<company>_<role>.pdf
 
 The two `--pages` lines are the page-count check: exactly 2 pages for the CV and exactly 1 for the cover letter (the hard limits in `05-cv-templates.md` and `06-cover-letter-templates.md`), exit 1 otherwise. With a custom template active, substitute its declared **Page limit** from the `ACTIVE-TEMPLATE` block. Nothing else runs this check - `verify_layout.py` deliberately leaves page count to it, and Step 5d's extraction call passes no `--pages` - so if these lines are skipped, the page budget is enforced by nothing but the visual read below.
 
+**Short documented profile:** if CLAUDE.md's verification checklist says a 1-page CV is correct when 2 pages would require invented claims, a `--pages 2` result of 1 page is a pass. Do not add bullets to reach 2 pages. A count of 3 is still a failure. The cover letter stays exactly 1 page.
+
 The layout script reports, per page, where the text starts and stops, bottom whitespace as a share of page height, and the largest vertical gap between lines. It exits 1 on: a hole over 100pt (~7 blank lines), a non-final page ending more than 25% early, body text colliding with the page-number footer, a final page more than 35% empty, and an entry header or section heading stranded at a page break. Page count is **not** checked here — that is `verify_pdf.py --pages`'s job, and the two `--pages` lines above run it.
 
 The hole check is the one a visual read misses. A moderncv `\cventry` renders as a `tabular`, so it is an **unbreakable block**: when it does not fit in the space left, the whole entry jumps to the next page and leaves a hole behind, while the document still compiles and still reports the right page count. Fix it by shortening the entry that follows the hole, not by stretching the page.
@@ -275,7 +278,7 @@ The thresholds are calibrated for the stock moderncv and `cover.cls` geometry; a
 Then read both PDFs via the Read tool and verify:
 
 **CV (`cv/main_<company>_<role>.pdf`):**
-- [ ] Exactly 2 pages (not 1, not 3)
+- [ ] Exactly 2 pages (not 1, not 3), unless CLAUDE.md allows 1 page because the documented profile cannot fill 2 pages without invented claims
 - [ ] No orphaned `\cventry` titles — a job/education title line must never sit alone at the bottom of page 1 with its bullets on page 2. This is the most common failure.
 - [ ] Section headings are not isolated at the top of page 2 with only 1-2 lines below
 - [ ] No awkward whitespace gaps
