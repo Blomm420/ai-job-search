@@ -144,6 +144,9 @@ REQUIRED_DENY_RULES = [
 # Personal-data ignore rules that must never disappear from .gitignore.
 REQUIRED_IGNORE_RULES = [
     "salary_data.json",
+    # Local contact overlay (name, phone, email, street). The example file
+    # profile.local.example.md is a different name and stays tracked.
+    "profile.local.md",
     # Depth-independent: the job-scraper skill resolves `job_scraper/` relative
     # to its own directory, so the state file lands under .claude/skills/... and
     # a repo-rooted rule silently fails to match it.

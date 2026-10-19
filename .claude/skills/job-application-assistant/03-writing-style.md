@@ -105,6 +105,18 @@ The cover letter is **not a CV repetition**. It should be forward-looking:
 - Frame advanced degrees as evidence of independent project delivery
 
 ## Multi-language Applications
-- Default to the language of the job posting
-- Cover letters in the posting's language should feel natural, not translated
-- Slightly warmer, more personal tone may be acceptable in some languages
+- If CLAUDE.md sets `Cover letter language:`, every cover letter uses that language. This profile sets **Swedish**. A Danish or English posting still gets a Swedish letter.
+- If that line is absent, default to the language of the job posting.
+- Swedish letters must read as written in Swedish, not as a translation from English.
+- CV language follows the `CV language:` line (this profile: Swedish), including section headings.
+
+## This candidate (do not invent)
+
+Cover letters and CVs for this profile follow four extra rules:
+
+1. **Swedish.** Salutation `Hej,` or `Hej [förnamn],` when the posting names a person. Closing `Med vänlig hälsning,`. Date as `19 oktober 2026`, not English `\today`.
+2. **Tailored.** The opening names this employer and this role. Do not reuse a letter written for another job.
+3. **Only recorded facts.** The only job is skötare on a dementia ward at Forsagården, Forsa. Education is skogslinje at Ösby and hantverk/finsnickeri at NVU Fagersta. Swedish is the only language. There is no driver's license and no car. Hours are deltid or heltid. Nothing else.
+4. **Targets are not history.** Butik, städ, kök, restaurang and service are what he is looking for. Do not write them as past jobs, and do not invent duties (kassa, städmetoder, matlagning, servering, hygien, dokumentation) to bridge the gap. A missing requirement is stated plainly.
+
+Banned filler in Swedish as well as English: "jag brinner för", "jag är passionerad", "jag tror att jag skulle passa perfekt", "ta nästa steg", "spetskompetens" with nothing behind it.

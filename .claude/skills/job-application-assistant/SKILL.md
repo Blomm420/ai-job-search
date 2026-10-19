@@ -3,7 +3,8 @@ name: job-application-assistant
 description: >
   Assists with job applications: evaluating job postings, tailoring CVs, writing cover letters,
   and preparing for interviews. Triggers on keywords like: job posting, job application, CV,
-  cover letter, resume, interview prep, job fit, career, application, apply, ansøgning, stilling
+  cover letter, resume, interview prep, job fit, career, application, apply, ansøgning, stilling,
+  utvärdera, annons, anpassa CV, personligt brev, intervjuförberedelse, jobbansökan
 allowed-tools: Read, Glob, Grep, WebFetch, WebSearch, Edit, Write, AskUserQuestion
 framework_version: 1.3.6
 ---
@@ -38,6 +39,7 @@ When the user provides a job posting (URL or text), follow this workflow:
 - Follow the writing style rules in `03-writing-style.md` (critical: no em-dashes, no cliches)
 - Follow the template structure in `06-cover-letter-templates.md`
 - Create `cover_letters/cover_<company>_<role>.tex`
+- If CLAUDE.md sets `Cover letter language:`, write the letter in that language (this profile: Swedish), tailored to this job. Never invent qualifications, dates, or duties
 - Ensure the letter connects specific experience to the role requirements
 
 ### Step 3b: Record the Application

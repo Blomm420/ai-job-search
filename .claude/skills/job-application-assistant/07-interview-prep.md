@@ -14,30 +14,37 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 
 ## Ready-Made STAR Examples
 
-<!-- These are populated by /setup from your actual experience. Below are templates showing the format. -->
+<!-- Only the facts below are on record. S/T/A/R details are blank on purpose. -->
+<!-- Do not fill them with guessed duties or results. Ask the candidate first. -->
 
-### 1. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT - what was happening, what was the problem]
-**T:** [YOUR RESPONSIBILITY - what you specifically needed to do]
-**A:** [WHAT YOU DID - specific actions, tools, methods]
-**R:** [OUTCOME - measurable results, adoption, impact]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 1. Skötare på demensavdelning (Forsagården, Forsa)
+**S:** Dokumenterat endast att arbetet var som skötare på en demensavdelning. Situation i övrigt är inte känd.
+**T:** Inte dokumenterat.
+**A:** Inte dokumenterat. Hitta inte på moment som medicin, dokumentation, städ eller mat.
+**R:** Inte dokumenterat. Hitta inte på siffror eller beröm.
+**Use for:** "Berätta om ditt senaste jobb", "Har du arbetat med människor?". Vänta in kandidatens egna detaljer innan svaret övas.
 
-### 2. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 2. Skogslinje (Ösby)
+**S:** Utbildning: skogslinje på Ösby. Årtal, kurser och betyg är inte kända.
+**T:** Inte dokumenterat.
+**A:** Inte dokumenterat.
+**R:** Inte dokumenterat.
+**Use for:** frågor om utbildning. Påstå inte en examen, ett betyg eller ett särskilt moment.
 
-### 3. [PROJECT_NAME] ([SKILL_DEMONSTRATED])
-**S:** [CONTEXT]
-**T:** [YOUR RESPONSIBILITY]
-**A:** [WHAT YOU DID]
-**R:** [OUTCOME]
-**Use for:** "[QUESTION_TYPE_1]", "[QUESTION_TYPE_2]"
+### 3. Hantverk/finsnickeri (NVU Fagersta)
+**S:** Utbildning: hantverk/finsnickeri på NVU Fagersta. Årtal, kurser och betyg är inte kända.
+**T:** Inte dokumenterat.
+**A:** Inte dokumenterat.
+**R:** Inte dokumenterat.
+**Use for:** frågor om praktisk utbildning. Påstå inte möbler, maskiner eller ett gesällprov som inte är angivna.
 
-<!-- Add more STAR examples as needed. Aim for 4-6 covering different competencies. -->
+### Ärliga svar när erfarenhet saknas
+**Butik, städ, kök, restaurang, service:** "Det har jag inte arbetat med. Jag söker det här jobbet och kan berätta om arbetet som skötare på Forsagården."
+**Körkort:** "Nej. Jag har inget körkort och ingen bil. Jag åker kollektivt."
+**Andra språk:** "Jag har svenska som modersmål." Lägg inte till engelska.
+**Kväll, helg, natt:** Inte angivet. Svara inte åt kandidaten.
+
+<!-- Add more STAR examples only from details the candidate actually supplies. -->
 
 ## Common Tough Questions
 
@@ -62,6 +69,13 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 - "What does a typical week look like in this role?"
 - "What would success look like in the first 6 months?"
 - "What's the biggest challenge the team is facing right now?"
+
+### För butik, städ, kök, restaurang och service (ställ på svenska)
+- "Hur tar man sig hit med kollektivtrafik från Växjö eller Norrhult?"
+- "Kräver jobbet körkort eller bil?"
+- "Är tjänsten deltid eller heltid, och vilka tider gäller?"
+- "Vad gör man en vanlig dag?"
+- "Behövs någon erfarenhet jag inte har, och går det att lära sig på plats?"
 
 ### About the Team
 - "How big is the team, and how do you divide work?"

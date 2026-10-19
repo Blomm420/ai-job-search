@@ -20,7 +20,7 @@ All CVs use the moderncv LaTeX package with the "banking" style and "blue" color
 cd cv && lualatex -interaction=nonstopmode main_<company>_<role>.tex
 ```
 
-Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. Any page count other than 2 is a failure that must be fixed before presenting to the user.
+Expected output for a full career history: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. This candidate's documented profile is short. A 1-page CV is the correct result. Do not add duties, metrics, or tools to reach 2 pages. Three pages is still a failure. CLAUDE.md's verification checklist is the page rule for this fork.
 
 ## Document Structure
 
@@ -123,7 +123,7 @@ Two related patterns are fine and should be kept:
 
 ### Section headings must match the CV's language (important)
 
-Section headings such as `\section{Core Competencies}`, `Professional Experience`, `Education`, `Languages`, `Publications`, `Honors and Awards`, `References` (and any others your template defines), plus the `Available upon request.` line under References, are all **literal English text baked into the template** - they do not translate themselves. Whenever the CV language (see `CV language` in the candidate profile) is not English, translate every one of these too, whatever they are, not just the body prose - a CV with a fully localized profile statement and bullets sitting under untouched English section headers reads as sloppy and inconsistent, and it's an easy thing to forget precisely because the prose translation is the obvious, visible part of the job. Worked example for Spanish: `Competencias Clave`, `Experiencia Profesional`, `Educaci\'on`, `Idiomas`, `Publicaciones`, `Distinciones y Premios`, `Referencias`, `Disponibles a solicitud.` The same rule applies for any other target language - check this explicitly during the verification pass.
+Section headings such as `\section{Core Competencies}`, `Professional Experience`, `Education`, `Languages`, `Publications`, `Honors and Awards`, `References` (and any others your template defines), plus the `Available upon request.` line under References, are all **literal English text baked into the template** - they do not translate themselves. Whenever the CV language (see `CV language` in the candidate profile) is not English, translate every one of these too, whatever they are, not just the body prose - a CV with a fully localized profile statement and bullets sitting under untouched English section headers reads as sloppy and inconsistent, and it's an easy thing to forget precisely because the prose translation is the obvious, visible part of the job. Worked example for Spanish: `Competencias Clave`, `Experiencia Profesional`, `Educaci\'on`, `Idiomas`, `Publicaciones`, `Distinciones y Premios`, `Referencias`, `Disponibles a solicitud.` This profile's CV language is Swedish: `Kompetenser`, `Arbetslivserfarenhet`, `Utbildning`, `Språk`, `Referenser`, `Lämnas på begäran.` The same rule applies for any other target language - check this explicitly during the verification pass.
 
 ## Section-by-Section Tailoring
 
@@ -136,12 +136,12 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+<!-- Facts only. Fill the bracketed role from the posting. Do not add experience. -->
+**For butik, städ, kök, restaurang and service roles:**
+> Jag söker [rollens titel] på deltid eller heltid i Växjö/Norrhult-området. Jag har arbetat som skötare på demensavdelning vid Forsagården i Forsa, och jag har gått skogslinjen på Ösby och hantverk/finsnickeri på NVU Fagersta. Jag har inget körkort och tar mig fram med kollektivtrafik. Jag har inte arbetat i [butik/städ/kök/restaurang] tidigare.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For omsorg roles that match the documented job:**
+> Jag har arbetat som skötare på demensavdelning vid Forsagården i Forsa och söker [rollens titel] på deltid eller heltid. Jag tar mig fram med kollektivtrafik och har inget körkort. Utbildning: skogslinje på Ösby och hantverk/finsnickeri på NVU Fagersta.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 
@@ -314,7 +314,7 @@ Two independent causes, both easy to avoid:
 
 ## Page Budget - Hard 2-Page Limit
 
-The CV **must** fit on exactly 2 pages when compiled. Use these content limits as a guide:
+A long career history **must** fit on exactly 2 pages when compiled. This profile must not be stretched to 2 pages with invented lines; 1 page is correct. Use these content limits as a guide when there is enough documented material to fill 2 pages:
 
 | Section | Max budget |
 |---------|-----------|

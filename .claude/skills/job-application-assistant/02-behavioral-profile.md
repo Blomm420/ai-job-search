@@ -4,51 +4,43 @@ framework_version: 1.0.0
 
 # Behavioral Profile
 
-<!-- SETUP: This file is populated by running /setup -->
-<!-- You can use results from PI, DISC, Myers-Briggs, StrengthsFinder, or a self-assessment -->
+<!-- No assessment was provided. Do not invent traits, strengths, or work style. -->
 
 ## Overview
-[YOUR_NAME]'s behavioral assessment identifies them as a **[PROFILE_TYPE]** pattern. [1-2 SENTENCE_SUMMARY].
+[YOUR_NAME] has no behavioral assessment on record (no PI, DISC, Myers-Briggs, StrengthsFinder, or self-assessment). Do not describe personality, energy, or "team fit" as if it had been measured. In applications, stay with the documented work and education.
 
 ## Core Behavioral Drives
 
 | Drive | Level | Meaning |
 |-------|-------|---------|
-| [DRIVE_1] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_2] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_3] | [LEVEL] | [DESCRIPTION] |
-| [DRIVE_4] | [LEVEL] | [DESCRIPTION] |
+| Inte bedömt | Inte bedömt | Ingen bedömning finns. Lämna tomt i ansökningar. |
 
 ## Strongest Behaviors
-- **[BEHAVIOR_1]:** [DESCRIPTION]
-- **[BEHAVIOR_2]:** [DESCRIPTION]
-- **[BEHAVIOR_3]:** [DESCRIPTION]
+- **Inte bedömt:** Inga beteenden är dokumenterade. Hitta inte på formuleringar som "serviceinriktad", "noggrann" eller "lagspelare" om de inte står i profilen.
 
 ## How You Work Best
-- [ENVIRONMENT_PREFERENCE_1]
-- [ENVIRONMENT_PREFERENCE_2]
-- [ENVIRONMENT_PREFERENCE_3]
+- Inte beskrivet.
+- Använd inte den här sektionen som källa till personlighetsmeningar i CV eller brev.
 
 ## Growth Areas (frame positively in applications)
-- **[AREA_1]:** [HOW_TO_FRAME_IT_POSITIVELY]
-- **[AREA_2]:** [HOW_TO_FRAME_IT_POSITIVELY]
+- **Inte bedömt:** Inga utvecklingsområden är angivna. En lucka mot annonsen (till exempel ingen butikserfarenhet, inget körkort) ska nämnas ärligt, inte kläs om till en styrka.
 
 ## Mapping to Job Posting Language
 
 When a job posting mentions these keywords, it's a **strong behavioral fit**:
-- [KEYWORD_OR_PHRASE_THAT_MATCHES_YOUR_STYLE]
-- [ANOTHER_KEYWORD]
+- Ingen beteendematchning är definierad. Matcha i stället på sakförhållanden i `01-candidate-profile.md` och på logistiken (kollektivtrafik, deltid/heltid, svenska).
 
 When a job posting mentions these, flag as **potential friction** (not deal-breaker):
-- [KEYWORD_OR_PHRASE_THAT_MIGHT_CLASH]
-- [ANOTHER_KEYWORD]
+- Krav som ligger nära ett deal-breaker men inte är ett: obekväm arbetstid är inte angiven, så flagga kväll, helg eller natt och fråga kandidaten i stället för att anta.
+
+Körkort, bil, otillgänglig arbetsplats och andra språk än svenska är deal-breakers i `CLAUDE.md`, inte friktion.
 
 ## Management Style Preferences
-- [WHAT_MANAGEMENT_STYLE_WORKS_FOR_YOU]
-- [WHAT_DOESN'T_WORK]
+- Inte beskrivet.
+- Hitta inte på vilken chef eller vilket tempo som passar.
 
 ## Using This in Applications
-- **Cover letters:** [HOW_TO_WEAVE_IN_BEHAVIORAL_STRENGTHS]
-- **CV:** [WHAT_TO_EMPHASIZE]
-- **Interviews:** [WHAT_STAR_EXAMPLES_TO_USE]
-- **Don't overstate:** [WHAT_NOT_TO_CLAIM]
+- **Cover letters:** Skriv på svenska. Bygg brevet på den dokumenterade rollen, utbildningarna och de praktiska villkoren. Inga personlighetsadjektiv utan källa.
+- **CV:** Betona skötare på demensavdelning, skogslinjen och hantverk/finsnickeri. Påstå inte butiks-, städ-, köks- eller restaurangerfarenhet.
+- **Interviews:** Använd bara STAR-exempel som kandidaten själv har fyllt i. Se `07-interview-prep.md`.
+- **Don't overstate:** Hitta inte på arbetsuppgifter på Forsagården, årtal, betyg, språk, körkort eller verktyg.
