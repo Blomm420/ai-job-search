@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.1
+framework_version: 1.0.2
 ---
 
 # Agent Guidelines: AI Job Search
@@ -31,7 +31,7 @@ Checks that prove the environment:
 - `python3 tools/lint_skills.py`
 - `python3 tools/security_guards.py`
 - `python3 -m unittest discover -s tests -t . -v`
-- In each `.agents/skills/*/cli`: `bun run typecheck`, then `bun test` when `tests/*.test.ts` exists
+- In each `.agents/skills/*/cli`: `bun test` when `tests/*.test.ts` exists. `bun run typecheck` passes for `freehire-search` and `linkedin-search`. The four Danish CLIs fail typecheck with the versions `bun install` resolves today (TypeScript 5.9.3, `@types/bun` 1.3.14, `@types/node` 16.9.1): `Response`, `URL`, and `Headers` lose their members. That is a dependency-typing failure, not a missing compiler. Do not reinstall TeX or Bun to chase it.
 - `cd cv && lualatex -interaction=nonstopmode -halt-on-error main_example.tex`
 - `cd cover_letters && xelatex -interaction=nonstopmode -halt-on-error cover_example.tex`
 - `python3 tools/verify_pdf.py` on both PDFs with `--min-chars 100`
