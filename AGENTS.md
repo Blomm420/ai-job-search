@@ -1,5 +1,5 @@
 ---
-framework_version: 1.0.0
+framework_version: 1.0.1
 ---
 
 # Agent Guidelines: AI Job Search
@@ -17,3 +17,23 @@ To prevent duplication and configuration drift across different AI agent framewo
    - Do not duplicate these rules or specifications. Treat `.claude/` files as the single source of truth.
 3. **Portal Search Skills:**
    - Job-portal search CLIs live under [.agents/skills/](.agents/skills/) in the portable Agent Skills format (with a `SKILL.md` per portal). Codex and Antigravity discover these automatically; the `/scrape` workflow in [.claude/skills/job-scraper/](.claude/skills/job-scraper/) orchestrates them.
+
+## Cursor Cloud specific instructions
+
+This repository is a job-search framework. There is no dev server and no `start` process.
+
+The image install puts Bun on `/usr/local/bin` (login shells skip `~/.bashrc`), installs the Debian TeX Live set from `.github/workflows/ci.yml` (`texlive-luatex`, `texlive-latex-extra`, `texlive-xetex`, `texlive-fonts-extra`, `texlive-fonts-recommended`, `poppler-utils`), and installs `openpyxl==3.1.5`, `PyYAML`, and `pypdf` with `python3 -m pip install --user`. System site-packages are not writable.
+
+Do not send live requests to job portals. CI typechecks the portal CLIs and runs their fixture tests only; automated LinkedIn requests violate that skill's terms.
+
+Checks that prove the environment:
+
+- `python3 tools/lint_skills.py`
+- `python3 tools/security_guards.py`
+- `python3 -m unittest discover -s tests -t . -v`
+- In each `.agents/skills/*/cli`: `bun run typecheck`, then `bun test` when `tests/*.test.ts` exists
+- `cd cv && lualatex -interaction=nonstopmode -halt-on-error main_example.tex`
+- `cd cover_letters && xelatex -interaction=nonstopmode -halt-on-error cover_example.tex`
+- `python3 tools/verify_pdf.py` on both PDFs with `--min-chars 100`
+
+`tools/check_framework_version.py` and the upstream placeholder and exact page-count PDF assertions apply only to `MadsLorentzen/ai-job-search`. This fork is personalized. A one-page CV is correct.
