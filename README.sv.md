@@ -24,6 +24,14 @@ python3 tools/install_portal_clis.py
 
 Kommandot kör `bun install` i varje portal-CLI under `.agents/skills/*/cli/`. `linkedin-search` har inga körberoenden. `bun install` där hämtar bara TypeScript-typer.
 
+På Windows, från reporoten:
+
+```powershell
+.\start.ps1
+```
+
+Dubbelklick på `start.bat` gör samma sak. Skriptet installerar portal-CLI:erna om Bun finns, skapar `profile.local.md` om den saknas, och stannar sedan.
+
 Starta sedan Claude Code i repot:
 
 ```bash
