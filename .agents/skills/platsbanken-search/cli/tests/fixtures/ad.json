@@ -1,0 +1,19 @@
+{
+  "id": "90000001",
+  "headline": "Butiksmedarbetare deltid",
+  "employer": { "name": "Exempelbutiken AB" },
+  "workplace_address": { "municipality": "Växjö", "region": "Kronobergs län" },
+  "publication_date": "2026-10-30T08:00:00",
+  "application_deadline": "2026-11-20T23:59:59",
+  "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/90000001",
+  "employment_type": { "label": "Vanlig anställning" },
+  "working_hours_type": { "label": "Deltid" },
+  "duration": { "label": "Tills vidare" },
+  "number_of_vacancies": 2,
+  "driving_license_required": true,
+  "driving_license": [{ "label": "B" }],
+  "access_to_own_car": false,
+  "must_have": { "languages": [{ "label": "Svenska" }] },
+  "application_details": { "url": "https://example.com/ansok" },
+  "description": { "text": "Vi söker en butiksmedarbetare.\r\n\r\n\r\n\r\nDu arbetar i kassan & med påfyllning." }
+}

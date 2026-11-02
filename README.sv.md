@@ -136,7 +136,7 @@ Förberedelsen utgår från annonsen, CV:t och brevet som skickades. STAR-exempl
 
 - **freehire.me** är påslagen men gäller teknikjobb. Träffar därifrån är inte måljobben, om de inte råkar vara service.
 - **Danska portaler** (Jobindex, Jobnet, Jobbank, Jobdanmark) är avstängda. Låt dem vara avstängda.
-- **Platsbanken / Arbetsförmedlingen** har inget färdigt CLI. Sökfrågorna i `search-queries.md` är WebSearch-reserven. Vill du ha ett eget CLI, kör `/add-portal` mot den sidan och läs koden innan du kör den.
+- **Platsbanken / Arbetsförmedlingen** har ett CLI, `platsbanken-search`, som använder JobTech JobSearch API. Det är avstängt (`enabled: false`) tills det har testats mot det riktiga API:t, se Notes i dess `SKILL.md`. Fram till dess är sökfrågorna i `search-queries.md` WebSearch-reserven.
 
 `/rank` betygsätter en hög nyhittade annonser. `/outcome` bokför vad som hände sen.
 

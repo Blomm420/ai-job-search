@@ -1,0 +1,36 @@
+{
+  "total": { "value": 3 },
+  "positions": 4,
+  "hits": [
+    {
+      "id": "90000001",
+      "headline": "Butiksmedarbetare deltid",
+      "employer": { "name": "Exempelbutiken AB" },
+      "workplace_address": { "municipality": "Växjö", "region": "Kronobergs län", "city": "Växjö" },
+      "publication_date": "2026-10-30T08:00:00",
+      "application_deadline": "2026-11-20T23:59:59",
+      "webpage_url": "https://arbetsformedlingen.se/platsbanken/annonser/90000001",
+      "employment_type": { "label": "Vanlig anställning" },
+      "working_hours_type": { "label": "Deltid" },
+      "driving_license_required": false,
+      "access_to_own_car": false
+    },
+    {
+      "id": "90000002",
+      "headline": "Lokalvårdare",
+      "employer": { "name": "Exempelstäd AB" },
+      "workplace_address": { "municipality": null, "region": "Kronobergs län", "city": null },
+      "publication_date": "2026-10-29T10:00:00",
+      "driving_license_required": true,
+      "access_to_own_car": true
+    },
+    { "id": "90000003", "headline": null },
+    "not-an-object",
+    {
+      "id": 90000004,
+      "headline": "Köksbiträde",
+      "employer": null,
+      "workplace_address": null
+    }
+  ]
+}
