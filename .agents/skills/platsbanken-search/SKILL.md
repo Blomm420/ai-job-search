@@ -10,7 +10,7 @@ description: >
   Arbetsförmedlingen, lediga jobb, sök jobb, jobbannonser, lediga tjänster,
   jobb i Växjö, search Swedish jobs, Swedish job board, job openings in Sweden.
 context: fork
-enabled: false  # UNVERIFIED: flip to true once `PLATSBANKEN_LIVE=1 bun run test` passes (see Notes)
+enabled: true  # set to false to keep this portal installed but have /scrape skip it
 allowed-tools: Bash(bun run .agents/skills/platsbanken-search/cli/src/cli.ts *)
 ---
 
@@ -20,11 +20,8 @@ Search live job ads from **Platsbanken** (Arbetsförmedlingen, Sweden) through t
 **JobTech JobSearch API**, the open API that Arbetsförmedlingen publishes for this
 data. No login, no API key, and **zero runtime dependencies**. It runs with just `bun`.
 
-> ⚠️ **Not yet verified against the live API.** This skill was generated in an
-> environment whose network policy blocked `jobsearch.api.jobtechdev.se`. The
-> request and field mapping follow the API's documented shape, and the offline
-> tests pass against synthetic fixtures, but no live response has been checked.
-> It ships with `enabled: false`, so `/scrape` skips it. See **Notes** for how to verify.
+Ad data is published by Arbetsförmedlingen under **CC0**. The API host serves no
+`robots.txt` (404), and no key or login is required.
 
 ## When to use this skill
 
@@ -98,11 +95,14 @@ Errors go to **stderr** as `{ "error": "...", "code": "..." }`, with exit code `
   the ad's structured fields. `null` means the ad does not say. It does not mean "not
   required": read the description with `detail` before treating a job as reachable without a car.
 - **Location is free text.** The API's structured `municipality` filter takes a taxonomy
-  concept id, not a name. The CLI puts the place name in `q` instead. A query can therefore
-  also match ads that only mention the town in their text.
-- **Verifying the skill.** Allow `jobsearch.api.jobtechdev.se` in the environment's network
-  settings, then run `cd .agents/skills/platsbanken-search/cli && PLATSBANKEN_LIVE=1 bun run test`
-  and one `search ... --format table` by hand. If fields come back `null` or wrong, fix the
-  paths in `cli/src/helpers.ts` and in `url-reference.md`. When it passes, set `enabled: true`
-  above and replace the synthetic fixtures with trimmed live captures.
+  concept id (Växjö is `mmot_H3A_auW`), not a name. The CLI puts the place name in `q`
+  instead. A query can therefore also match ads that only mention the town in their text.
+- **Network.** In a cloud session, `jobsearch.api.jobtechdev.se` must be on the environment's
+  allowed domains, or every call fails with a proxy 403.
+- **Not pre-approved.** `.claude/settings.json` has no allow entry for this CLI, so `/scrape`
+  asks before each call. To pre-approve it, add
+  `Bash(bun run .agents/skills/platsbanken-search/cli/src/cli.ts:*)` to `permissions.allow`
+  there and to `ALLOWED_PERMISSIONS` in `tools/security_guards.py` in the same commit.
+- **Live check.** `cd .agents/skills/platsbanken-search/cli && PLATSBANKEN_LIVE=1 bun run test`
+  runs one real search and one detail fetch. Verified 2026-11-02.
 - The CLI retries 429/5xx with exponential backoff. Keep volume low anyway.

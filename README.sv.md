@@ -136,7 +136,7 @@ Förberedelsen utgår från annonsen, CV:t och brevet som skickades. STAR-exempl
 
 - **freehire.me** är påslagen men gäller teknikjobb. Träffar därifrån är inte måljobben, om de inte råkar vara service.
 - **Danska portaler** (Jobindex, Jobnet, Jobbank, Jobdanmark) är avstängda. Låt dem vara avstängda.
-- **Platsbanken / Arbetsförmedlingen** har ett CLI, `platsbanken-search`, som använder JobTech JobSearch API. Det är avstängt (`enabled: false`) tills det har testats mot det riktiga API:t, se Notes i dess `SKILL.md`. Fram till dess är sökfrågorna i `search-queries.md` WebSearch-reserven.
+- **Platsbanken / Arbetsförmedlingen** har ett CLI, `platsbanken-search`, som använder Arbetsförmedlingens öppna JobTech JobSearch API (ingen nyckel, annonserna är CC0). `/scrape` använder det automatiskt men frågar före varje anrop, eftersom det inte är förhandsgodkänt i `.claude/settings.json`. I en molnsession måste `jobsearch.api.jobtechdev.se` vara tillåten i miljöns nätverksinställningar. Sökfrågorna i `search-queries.md` är reserven om API:t inte svarar.
 
 `/rank` betygsätter en hög nyhittade annonser. `/outcome` bokför vad som hände sen.
 

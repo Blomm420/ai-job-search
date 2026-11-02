@@ -17,5 +17,5 @@ bun run test                       # offline, against synthetic fixtures in test
 PLATSBANKEN_LIVE=1 bun run test    # also runs tests/live.test.ts against the real API
 ```
 
-The field mapping has not yet been checked against a live response. See
-`../SKILL.md` (Notes) and `../url-reference.md`.
+The field mapping was verified against live responses on 2026-11-02. Field paths are in
+`../url-reference.md`.

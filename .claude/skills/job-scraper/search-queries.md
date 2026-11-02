@@ -24,12 +24,12 @@ bun run .agents/skills/linkedin-search/cli/src/cli.ts search -q "butiksmedarbeta
 
 The four Danish portals (`jobindex-search`, `jobnet-search`, `jobbank-search`, `jobdanmark-search`) ship with `enabled: false`. Leave them disabled.
 
-`platsbanken-search` (Arbetsförmedlingen / Platsbanken via the JobTech JobSearch API) is installed but ships with `enabled: false` until it has passed a live test (see Notes in its `SKILL.md`). Until then, use the `site:` lines below.
+`platsbanken-search` (Arbetsförmedlingen / Platsbanken via the JobTech JobSearch API) is installed and enabled. Use the `site:` lines below only as a fallback when the API is unreachable.
 
 ## Search Sites
 
 Primary:
-- **arbetsformedlingen.se / Platsbanken** - Sweden's public job board. `platsbanken-search` CLI (disabled until live-verified); WebSearch fallback below.
+- **arbetsformedlingen.se / Platsbanken** - Sweden's public job board. Covered by the `platsbanken-search` CLI; WebSearch fallback below.
 - **linkedin.com/jobs** - also covered by `linkedin-search` (`-l "Växjö, Sweden"`)
 
 Secondary (company career pages and other boards via WebSearch, not shipped CLIs):

@@ -1,13 +1,12 @@
 # Platsbanken / JobTech JobSearch API reference
 
-**Status: unverified.** Written from the API's published documentation, not from a
-captured live response. The generating environment's network policy blocked every
-JobTech and Arbetsförmedlingen host. Check each path below against a live response
-before relying on it, and correct this file together with `cli/src/helpers.ts`.
+**Status: verified against live responses on 2026-11-02** (search for "butik Växjö" and
+`/ad/31642313`). When the API changes, correct this file together with `cli/src/helpers.ts`.
 
-Things that were also not checked live: `robots.txt` on the API host, the API's terms of
-use and data licence, and rate limits. Look them up at https://jobtechdev.se before
-enabling the skill.
+- Licence: the OpenAPI spec (`/swagger.json`) states "Ads are licensed under CC0".
+- `robots.txt` on the API host returns 404, so no paths are disallowed.
+- No API key. No published rate limit was found; the CLI backs off on 429/5xx.
+- Docs: https://gitlab.com/arbetsformedlingen/job-ads/jobsearch/jobsearch-api/-/blob/main/docs/AdFields.md
 
 ## Endpoints
 
@@ -29,7 +28,7 @@ Headers sent: `Accept: application/json`, `User-Agent: Mozilla/5.0 (compatible; 
 | `limit` | fixed `20` | The API maximum is 100. |
 | `sort` | fixed `pubdate-desc` | Newest first. |
 
-Not used: `municipality` / `region` (these take taxonomy concept ids, not names).
+Not used: `municipality` / `region` (these take taxonomy concept ids, not names; Växjö kommun is `mmot_H3A_auW`, Kronobergs län is `tF3y_MF9_h5G`).
 
 ## Response fields
 
@@ -48,7 +47,7 @@ Search: `{ total: { value }, positions, hits: [ <ad> ... ] }`. `/ad/<id>` return
 | `workingHours` | `working_hours_type.label` |
 | `drivingLicenseRequired` | `driving_license_required` (boolean) |
 | `ownCarRequired` | `access_to_own_car` (boolean) |
-| `description` (detail) | `description.text` (plain text with newlines) |
+| `description` (detail) | `description.text` (plain text with newlines; `text_formatted` holds HTML) |
 | `duration` (detail) | `duration.label` |
 | `vacancies` (detail) | `number_of_vacancies` |
 | `applyUrl` (detail) | `application_details.url` |
