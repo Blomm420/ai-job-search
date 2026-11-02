@@ -128,13 +128,9 @@ Förberedelsen utgår från annonsen, CV:t och brevet som skickades. STAR-exempl
 
 `/scrape` läser `.claude/skills/job-scraper/search-queries.md` och kör de portaler som är påslagna.
 
-- **LinkedIn** (`linkedin-search`) fungerar för Växjö. Automatisk hämtning strider mot LinkedIns villkor, så håll volymen låg. Exempel:
-
-  ```bash
-  bun run .agents/skills/linkedin-search/cli/src/cli.ts search -q "butiksmedarbetare" -l "Växjö, Sweden" --jobage 14 --format table
-  ```
-
-- **freehire.me** är påslagen men gäller teknikjobb. Träffar därifrån är inte måljobben, om de inte råkar vara service.
+- **Två listor.** Arbetsförmedlingen kräver att jobben kommer från Platsbanken. `/scrape` visar därför två separata listor: **Lista 1: Platsbanken**, med jobb som räknas för Arbetsförmedlingen, och **Lista 2: Alla källor**, med Platsbanken, LinkedIn och andra sajter. Jobb som inte finns i Platsbanken märks "ej Platsbanken". `/scrape platsbanken` visar bara lista 1.
+- **LinkedIn** (`linkedin-search`) är påslagen. Automatisk hämtning strider mot LinkedIns villkor, så håll volymen låg.
+- **freehire.me** är avstängd, eftersom den bara har teknikjobb.
 - **Danska portaler** (Jobindex, Jobnet, Jobbank, Jobdanmark) är avstängda. Låt dem vara avstängda.
 - **Platsbanken / Arbetsförmedlingen** har ett CLI, `platsbanken-search`, som använder Arbetsförmedlingens öppna JobTech JobSearch API (ingen nyckel, annonserna är CC0). `/scrape` använder det automatiskt men frågar före varje anrop, eftersom det inte är förhandsgodkänt i `.claude/settings.json`. I en molnsession måste `jobsearch.api.jobtechdev.se` vara tillåten i miljöns nätverksinställningar. Sökfrågorna i `search-queries.md` är reserven om API:t inte svarar.
 

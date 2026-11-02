@@ -14,27 +14,36 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 Queries are in Swedish, the only declared language. Area: Växjö / Norrhult, Kronobergs län. Targets: butik, städ, kök, restaurang, service. Deltid and heltid both count. Drop anything that requires a driver's license or a car.
 
-Enabled CLI that fits: `linkedin-search`, personal use only, low volume. Pass the location explicitly, for example `--location "Växjö, Sweden"`. Run a separate call for Norrhult when the first call is only Växjö.
+### Two separate result lists
 
-```bash
-bun run .agents/skills/linkedin-search/cli/src/cli.ts search -q "butiksmedarbetare" -l "Växjö, Sweden" --jobage 14 --format json
-```
+The candidate's Arbetsförmedlingen requirement is that applied-for jobs come from **Platsbanken**. Other boards are still useful, so every `/scrape` run presents **two separate tables** in Step 5:
 
-`freehire-search` is enabled in this repo and covers tech roles. Skip its hits unless the posting is actually butik, städ, kök, restaurang or service.
+1. **Platsbanken** - only ads that exist in Platsbanken, each with its `arbetsformedlingen.se/platsbanken/annonser/<id>` link. Heading: `### Lista 1: Platsbanken (godkänt för Arbetsförmedlingen)`.
+2. **Alla källor** - every new job from every source: Platsbanken, LinkedIn and verified WebSearch hits. Heading: `### Lista 2: Alla källor`. Add a `Källa` column (Platsbanken / LinkedIn / annan sajt) and mark rows that are **not** in Platsbanken with "ej Platsbanken".
 
-The four Danish portals (`jobindex-search`, `jobnet-search`, `jobbank-search`, `jobdanmark-search`) ship with `enabled: false`. Leave them disabled.
+A job found on LinkedIn or another board that is also in Platsbanken counts as a Platsbanken job: put it in list 1 with the Platsbanken link, and in list 2 with `Källa: Platsbanken + LinkedIn`. Match by employer + title, and confirm with `platsbanken-search search -q "<employer> <title>"` before claiming it.
 
-`platsbanken-search` (Arbetsförmedlingen / Platsbanken via the JobTech JobSearch API) is installed and enabled. Use the `site:` lines below only as a fallback when the API is unreachable.
+`/scrape platsbanken` runs only `platsbanken-search` and presents only list 1.
+
+### Portals
+
+- `platsbanken-search` (JobTech JobSearch API): run each query with `-l "Växjö"` and again with `-l "Norrhult"`.
+  ```bash
+  bun run .agents/skills/platsbanken-search/cli/src/cli.ts search -q "butiksmedarbetare" -l "Växjö" --jobage 14 -n 20 --format json
+  ```
+- `linkedin-search`: personal use only, low volume. Pass the location explicitly, `-l "Växjö, Sweden"`.
+  ```bash
+  bun run .agents/skills/linkedin-search/cli/src/cli.ts search -q "butiksmedarbetare" -l "Växjö, Sweden" --jobage 14 --format json
+  ```
+- `freehire-search` (tech roles only) and the four Danish portals are installed but `enabled: false`. Leave them disabled.
+
+If a CLI is unreachable, use the `site:` lines below as the fallback. A fallback hit goes in list 1 only when it resolves to a Platsbanken ad page.
 
 ## Search Sites
 
-Primary:
-- **arbetsformedlingen.se / Platsbanken** - Sweden's public job board. Covered by the `platsbanken-search` CLI; WebSearch fallback below.
-- **linkedin.com/jobs** - also covered by `linkedin-search` (`-l "Växjö, Sweden"`)
-
-Secondary (company career pages and other boards via WebSearch, not shipped CLIs):
-- `site:` searches for a named employer once a posting is in play
-- Other Swedish boards only as a WebSearch fallback (for example Indeed or Blocket Jobb). Do not treat them as installed CLIs.
+- **arbetsformedlingen.se / Platsbanken** - list 1 and list 2. `platsbanken-search` CLI.
+- **linkedin.com/jobs** - list 2 only. `linkedin-search` CLI.
+- Other Swedish boards (Indeed, Blocket Jobb, ledigajobb.se) - list 2 only, WebSearch fallback, and only when the hit resolves to a current posting.
 
 ## Query Categories
 
