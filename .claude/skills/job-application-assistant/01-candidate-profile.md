@@ -43,6 +43,11 @@ Forsa, Hudiksvalls kommun
 - Hjälpte brukarna med bland annat städning, tvätt och hygien.
 - Inga fler arbetsuppgifter, omfattning eller resultat är dokumenterade. Lägg inte till några.
 
+### Allt i allo, bensinstation - Macken, Bernshammar (2021)
+Kolsva, Västmanland
+- Skötte kassan och skötte macken som allt i allo (kandidatens egen uppgift 2026-11).
+- Ägaren har avlidit, så det finns ingen referens därifrån. Månader, anställningsform och fler uppgifter är inte angivna. Hitta inte på dem.
+
 ### Abonnemangsförsäljare (mindre än 1 års erfarenhet)
 - Arbetsgivare, datum och uppgifter är inte angivna.
 
@@ -52,7 +57,7 @@ Forsa, Hudiksvalls kommun
 ### Konsthantverkare (mindre än 1 års erfarenhet)
 - Arbetsgivare, datum och uppgifter är inte angivna.
 
-<!-- Add more roles only when the candidate states them. Butik, kök and restaurang are targets, not jobs held. -->
+<!-- Add more roles only when the candidate states them. The candidate also mentioned running a gym and odd jobs; add them only once he gives details. Kök and restaurang are targets, not jobs held. -->
 
 ## Independent Projects
 Inga angivna.

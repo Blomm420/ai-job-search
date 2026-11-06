@@ -41,6 +41,6 @@ Körkort, bil, otillgänglig arbetsplats och andra språk än svenska och engels
 
 ## Using This in Applications
 - **Cover letters:** Skriv på svenska. Bygg brevet på de dokumenterade rollerna, utbildningarna och de praktiska villkoren. Personlighetsord bara från kandidatens egen beskrivning ovan.
-- **CV:** Lyft det som passar annonsen: städning, tvätt och hygien på demensavdelningen för städ och service, abonnemangsförsäljning för butik och säljjobb, hantverket för praktiska jobb. Påstå inte butiks-, köks- eller restaurangerfarenhet.
+- **CV:** Lyft det som passar annonsen: kassa och allt i allo på macken för butik och service, städning, tvätt och hygien på demensavdelningen för städ och service, abonnemangsförsäljning för butik och säljjobb, hantverket för praktiska jobb. Påstå inte butiks-, köks- eller restaurangerfarenhet.
 - **Interviews:** Använd bara STAR-exempel som kandidaten själv har fyllt i. Se `07-interview-prep.md`.
 - **Don't overstate:** Hitta inte på fler arbetsuppgifter, arbetsgivare, datum, betyg, språk, körkort eller verktyg än de som står i `01-candidate-profile.md`.
