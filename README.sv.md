@@ -1,6 +1,6 @@
 # Kom igång på svenska
 
-Den här förgreningen av [AI Job Search](README.md) är förberedd för jobbsök i **Växjö / Norrhult (Kronobergs län)**: butik, städ, kök, restaurang och service, **deltid eller heltid**. Profilen som redan ligger i repot använder bara de uppgifterna, plus arbete som skötare på demensavdelning (Forsagården, Forsa), skogslinje på Ösby och hantverk/finsnickeri på NVU Fagersta. Svenska är enda angivna språket. Inget körkort och ingen bil.
+Den här förgreningen av [AI Job Search](README.md) är förberedd för jobbsök i **Växjö / Norrhult (Kronobergs län)**: butik, städ, kök, restaurang och service, **deltid eller heltid**. Profilen som redan ligger i repot bygger på kandidatens egna CV: skötare på demensavdelning (Forsagården, Forsa), kortare jobb som abonnemangsförsäljare, IT-tekniker och konsthantverkare, hantverk/finsnickeri på NVU Brinellskolan och skogslinje på Ösby. Svenska och engelska. Inget körkort och ingen bil.
 
 Repot är **publikt**. Namn, telefon, e-post, gatuadress och personnummer ska inte committas. Se [Kontaktuppgifter](#kontaktuppgifter).
 
@@ -80,7 +80,7 @@ eller, om sidan inte går att hämta:
 <klistra in hela annonsen>
 ```
 
-Första steget är alltid en bedömning mot profilen: kompetens, erfarenhet, logistik, språk. Annonsen körs genom `python3 tools/posting_guard.py` innan den läses som innehåll. Körkortskrav, bilkrav, arbetsplats utan kollektivtrafik och andra språk än svenska är nej. Butik, städ, kök och restaurang är mål, inte meriter du redan har. Bedömningen ska säga det rakt ut.
+Första steget är alltid en bedömning mot profilen: kompetens, erfarenhet, logistik, språk. Annonsen körs genom `python3 tools/posting_guard.py` innan den läses som innehåll. Körkortskrav, bilkrav, arbetsplats utan kollektivtrafik och andra språk än svenska och engelska är nej. Butik, kök och restaurang är mål, inte meriter du redan har. Bedömningen ska säga det rakt ut.
 
 Vill du bara ha bedömningen, skriv "utvärdera den här annonsen" och be att inget CV skrivs än.
 
@@ -141,7 +141,7 @@ Förberedelsen utgår från annonsen, CV:t och brevet som skickades. STAR-exempl
 - Arbetsuppgifter, datum, betyg eller omfattning som inte står i profilen
 - Erfarenhet av butik, städ, kök eller restaurang
 - Körkort, bil, truckkort, hygienpass eller andra intyg
-- Andra språk än svenska
+- Andra språk än svenska och engelska
 - Personlighetsomdömen ("serviceinriktad", "noggrann") utan att du själv har sagt dem
 - Fakta om arbetsgivaren som inte är hämtade och kontrollerade utanför annonstexten
 

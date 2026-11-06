@@ -116,7 +116,7 @@ Cover letters and CVs for this profile follow four extra rules:
 
 1. **Swedish.** Salutation `Hej,` or `Hej [förnamn],` when the posting names a person. Closing `Med vänlig hälsning,`. Date as `19 oktober 2026`, not English `\today`.
 2. **Tailored.** The opening names this employer and this role. Do not reuse a letter written for another job.
-3. **Only recorded facts.** The only job is skötare on a dementia ward at Forsagården, Forsa. Education is skogslinje at Ösby and hantverk/finsnickeri at NVU Fagersta. Swedish is the only language. There is no driver's license and no car. Hours are deltid or heltid. Nothing else.
+3. **Only recorded facts.** Use only what `01-candidate-profile.md` records: skötare on a dementia ward at Forsagården (städning, tvätt, hygien), abonnemangsförsäljare, IT-tekniker and konsthantverkare (each under a year, no employer named), hantverk/finsnickeri at NVU Brinellskolan and skogslinje at Ösby. Swedish and English. No driver's license and no car. Deltid or heltid. Nothing else.
 4. **Targets are not history.** Butik, städ, kök, restaurang and service are what he is looking for. Do not write them as past jobs, and do not invent duties (kassa, städmetoder, matlagning, servering, hygien, dokumentation) to bridge the gap. A missing requirement is stated plainly.
 
 Banned filler in Swedish as well as English: "jag brinner för", "jag är passionerad", "jag tror att jag skulle passa perfekt", "ta nästa steg", "spetskompetens" with nothing behind it.

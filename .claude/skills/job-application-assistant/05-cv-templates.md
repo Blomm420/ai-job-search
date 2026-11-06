@@ -138,10 +138,10 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 <!-- Facts only. Fill the bracketed role from the posting. Do not add experience. -->
 **For butik, städ, kök, restaurang and service roles:**
-> Jag söker [rollens titel] på deltid eller heltid i Växjö/Norrhult-området. Jag har arbetat som skötare på demensavdelning vid Forsagården i Forsa, och jag har gått skogslinjen på Ösby och hantverk/finsnickeri på NVU Fagersta. Jag har inget körkort och tar mig fram med kollektivtrafik. Jag har inte arbetat i [butik/städ/kök/restaurang] tidigare.
+> Jag söker [rollens titel] på deltid eller heltid i Växjö/Norrhult-området. Jag har arbetat som skötare på demensavdelning vid Forsagården i Forsa, där jag hjälpte brukarna med städning, tvätt och hygien, och jag har arbetat som abonnemangsförsäljare. Jag har gått hantverk/finsnickeri på NVU Brinellskolan och skogslinjen på Ösby. Jag har inget körkort och tar mig fram med kollektivtrafik. Jag har inte arbetat i [butik/kök/restaurang] tidigare.
 
 **For omsorg roles that match the documented job:**
-> Jag har arbetat som skötare på demensavdelning vid Forsagården i Forsa och söker [rollens titel] på deltid eller heltid. Jag tar mig fram med kollektivtrafik och har inget körkort. Utbildning: skogslinje på Ösby och hantverk/finsnickeri på NVU Fagersta.
+> Jag har arbetat som skötare på demensavdelning vid Forsagården i Forsa och söker [rollens titel] på deltid eller heltid. Jag tar mig fram med kollektivtrafik och har inget körkort. Utbildning: hantverk/finsnickeri på NVU Brinellskolan och skogslinjen på Ösby.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

@@ -30,7 +30,8 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   | Language | Level |
   |----------|-------|
   | Svenska | Modersmål |
-  <!-- Only Swedish is declared. Any posting that requires another language as a job condition fails the Language Gate in 04-job-evaluation.md. Do not add English or any other language. -->
+  | Engelska | Bra (kandidatens egen uppgift 2026-11; CV från 2021 säger grundläggande i tal och skrift) |
+  <!-- Swedish and English are declared. A posting that requires any other language fails the Language Gate in 04-job-evaluation.md. A posting that asks for fluent or advanced English gets FLAG, not FAIL. -->
 - **CV language:** Swedish
 - **Cover letter language:** Swedish
 - **Status:** Söker arbete, deltid eller heltid
@@ -39,21 +40,25 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 Contact values above stay as tokens in this tracked file. When a CV or cover letter is drafted, read `profile.local.md` (copy `profile.local.example.md`) and substitute them only into the generated, gitignored files. If `profile.local.md` does not exist, leave the tokens and tell the user to create it.
 
 ### Education
-No years, grades, or thesis are on record. Do not invent them.
-- **Skogslinje** (årtal ej angivet) - Ösby
-- **Hantverk/finsnickeri** (årtal ej angivet) - NVU Fagersta
+Source: the candidate's own CVs (2020 and 2021). No grades or thesis are on record. Do not invent them.
+- **Hantverk, inriktning finsnickeri/möbelsnickare** (aug 2010 - dec 2012, ca 2,5 år) - NVU Brinellskolan, Fagersta. Ett av CV:na anger "ej avslutad".
+- **Skogslinje** (aug 2009 - jun 2010, 1 år) - Ösby naturbruksgymnasium, Sala. Lärde sig köra traktor, motorsåg och röjsåg.
 
 ### Professional Experience
-No dates or task list are on record. Do not invent duties, team size, or outcomes.
-- **Skötare, demensavdelning** (datum ej angivet) - **Forsagården** (Forsa)
-  - Dokumenterat: titeln skötare på en demensavdelning.
-  - Inte dokumenterat: arbetsuppgifter, omfattning, schema eller resultat.
+Source: the candidate's own CVs (2020 and 2021). Do not invent duties, team size, or outcomes beyond what is listed.
+- **Skötare, demensavdelning** (maj 2018 - sep 2018 som sommarvikarie, därefter timanställd vid behov) - **Forsagården** (Forsa, Hudiksvalls kommun)
+  - Dokumenterat: hjälpte brukarna med bland annat städning, tvätt och hygien.
+  - CV:t från 2021 anger maj-sep 2018. Det äldre CV:t anger maj 2018 - pågående (2 år, 1 månad) som timanställd och sommarvikarie, med möjlighet att bli inringd vid personalbrist. Skriv "maj 2018 - sep 2018, därefter timanställd vid behov" och hitta inte på ett slutdatum.
+- **Abonnemangsförsäljare** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
+- **IT-tekniker/datatekniker** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
+- **Konsthantverkare** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
+  - För de tre rollerna ovan är bara titel och omfattning (under 1 år) dokumenterade. Hitta inte på arbetsgivare, datum eller uppgifter.
 
 ### Technical Skills
-- **Primary:** Svenska som modersmål. Personnära arbete som skötare på demensavdelning (bara titeln är dokumenterad).
-- **Secondary:** Skogslinje (Ösby). Hantverk/finsnickeri (NVU Fagersta).
-- **Domain:** Söker butik, städ, kök, restaurang och service. Det är mål, inte tidigare anställningar.
-- **Software:** Inga verktyg eller program är angivna. Hitta inte på några.
+- **Primary:** Svenska som modersmål, engelska. Skötare på demensavdelning: städning, tvätt och hygien åt brukarna. Försäljning (abonnemangsförsäljare, under 1 år).
+- **Secondary:** Hantverk/finsnickeri, möbelsnickeri (NVU Brinellskolan). Skogslinje (Ösby): traktor, motorsåg, röjsåg. IT-tekniker (under 1 år) och självlärd inom data/IT, både programmering och hårdvara. Konsthantverk (under 1 år). Intresse för bil- och lastbilsmekanik.
+- **Domain:** Söker butik, städ, kök, restaurang och service. Städning ingick i skötarjobbet och försäljning i abonnemangsjobbet, men butik, kök och restaurang är mål, inte tidigare anställningar.
+- **Software:** Inga specifika program eller programmeringsspråk är angivna. Hitta inte på några.
 
 ### Certifications
 Inga angivna. Hitta inte på körkort, hygienpass, truckkort eller andra intyg.
@@ -65,7 +70,7 @@ Inga angivna.
 Inga angivna.
 
 ### Behavioral Profile
-Ingen bedömning (PI, DISC, Myers-Briggs eller egen) är gjord. Hitta inte på personlighetsdrag, styrkor eller "jag är en lagspelare".
+Ingen bedömning (PI, DISC, Myers-Briggs) är gjord. Kandidatens egen beskrivning i tidigare personliga brev: snabblärd, håller tider och ringer i tid vid sjukdom, snäll, glad och hjälpsam, hög arbetsmoral, vill hjälpa människor, kan komma på intervju alla vardagar. Använd bara de orden, och bara som kandidatens egen beskrivning. Hitta inte på fler drag.
 
 ### What Excites You
 Inte beskrivet utöver jobben som söks: butik, städ, kök, restaurang och service, deltid eller heltid, i Växjö/Norrhult-området.
@@ -81,7 +86,7 @@ Inte beskrivet utöver jobben som söks: butik, städ, kök, restaurang och serv
 - Krav på körkort eller tillgång till bil
 - Arbetsplats som inte går att nå med kollektivtrafik från Växjö eller Norrhult
 - Flytt, eller arbetsort utanför det område kollektivtrafiken når därifrån
-- Ett språkkrav på något annat språk än svenska
+- Ett språkkrav på något annat språk än svenska eller engelska
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)

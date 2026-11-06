@@ -18,30 +18,31 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 <!-- Do not fill them with guessed duties or results. Ask the candidate first. -->
 
 ### 1. Skötare på demensavdelning (Forsagården, Forsa)
-**S:** Dokumenterat endast att arbetet var som skötare på en demensavdelning. Situation i övrigt är inte känd.
-**T:** Inte dokumenterat.
-**A:** Inte dokumenterat. Hitta inte på moment som medicin, dokumentation, städ eller mat.
+**S:** Skötare på en demensavdelning, sommarvikarie maj-sep 2018 och därefter timanställd vid behov.
+**T:** Inte dokumenterat utöver uppgifterna nedan.
+**A:** Hjälpte brukarna med bland annat städning, tvätt och hygien. Hitta inte på moment som medicin, dokumentation eller mat.
 **R:** Inte dokumenterat. Hitta inte på siffror eller beröm.
 **Use for:** "Berätta om ditt senaste jobb", "Har du arbetat med människor?". Vänta in kandidatens egna detaljer innan svaret övas.
 
 ### 2. Skogslinje (Ösby)
-**S:** Utbildning: skogslinje på Ösby. Årtal, kurser och betyg är inte kända.
+**S:** Utbildning: skogslinje på Ösby naturbruksgymnasium, Sala, aug 2009 - jun 2010. Lärde sig köra traktor, motorsåg och röjsåg. Betyg är inte kända.
 **T:** Inte dokumenterat.
 **A:** Inte dokumenterat.
 **R:** Inte dokumenterat.
 **Use for:** frågor om utbildning. Påstå inte en examen, ett betyg eller ett särskilt moment.
 
-### 3. Hantverk/finsnickeri (NVU Fagersta)
-**S:** Utbildning: hantverk/finsnickeri på NVU Fagersta. Årtal, kurser och betyg är inte kända.
+### 3. Hantverk/finsnickeri (NVU Brinellskolan, Fagersta)
+**S:** Utbildning: hantverk med inriktning finsnickeri/möbelsnickare, NVU Brinellskolan, aug 2010 - dec 2012 (ca 2,5 år). Ett CV anger "ej avslutad". Kurser och betyg är inte kända.
 **T:** Inte dokumenterat.
 **A:** Inte dokumenterat.
 **R:** Inte dokumenterat.
 **Use for:** frågor om praktisk utbildning. Påstå inte möbler, maskiner eller ett gesällprov som inte är angivna.
 
 ### Ärliga svar när erfarenhet saknas
-**Butik, städ, kök, restaurang, service:** "Det har jag inte arbetat med. Jag söker det här jobbet och kan berätta om arbetet som skötare på Forsagården."
+**Butik, kök, restaurang:** "Det har jag inte arbetat med. Men jag har sålt abonnemang, och på Forsagården hjälpte jag brukarna med städning, tvätt och hygien."
+**Städ:** Städning ingick i skötarjobbet på Forsagården. Påstå inte mer än så.
 **Körkort:** "Nej. Jag har inget körkort och ingen bil. Jag åker kollektivt."
-**Andra språk:** "Jag har svenska som modersmål." Lägg inte till engelska.
+**Andra språk:** "Jag har svenska som modersmål och kan engelska." Påstå inte en högre engelsknivå än kandidaten anger.
 **Kväll, helg, natt:** Inte angivet. Svara inte åt kandidaten.
 
 <!-- Add more STAR examples only from details the candidate actually supplies. -->

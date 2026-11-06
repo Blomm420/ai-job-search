@@ -162,7 +162,7 @@ Escape these wherever they appear in body text:
 - Swedish closing: `Med vänlig hälsning,`
 - Swedish salutation: `Hej,` or `Hej [förnamn],` when a person is named. Do not use "To whom it may concern".
 - The letter is tailored to this employer and this role. Do not reuse paragraphs from another application.
-- Never invent qualifications. The only job on record is skötare on a dementia ward at Forsagården, Forsa. Education is skogslinje at Ösby and hantverk/finsnickeri at NVU Fagersta. No driver's license, no car, Swedish only, deltid or heltid. Butik, städ, kök, restaurang and service are targets, not previous jobs. No dates or duty lists exist; do not create them.
+- Never invent qualifications. Use only what `01-candidate-profile.md` records: skötare at Forsagården (städning, tvätt, hygien; maj 2018 onward), abonnemangsförsäljare, IT-tekniker and konsthantverkare (each under a year, no employer or dates), hantverk/finsnickeri at NVU Brinellskolan (2010-2012) and skogslinje at Ösby (2009-2010). Swedish and English, no driver's license, no car, deltid or heltid. Butik, kök and restaurang are targets, not previous jobs. Do not add duties, employers or dates beyond the profile.
 - Danish example when the profile does not force Swedish: "Med venlig hilsen,"
 
 ## Checklist Before Finalizing

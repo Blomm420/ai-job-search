@@ -21,27 +21,38 @@ framework_version: 1.1.1
 - **Constraints:** Inget körkort och ingen bil. Behöver kollektivtrafik från Växjö eller Norrhult. Söker butik, städ, kök, restaurang och servicejobb i det området.
 
 ### Languages
-<!-- Only Swedish is declared. Do not add rows. -->
+<!-- Swedish and English are declared. Do not add other rows unless the candidate states them. -->
 
 | Language | Level | Notes |
 |----------|-------|-------|
-| Svenska | Modersmål | Enda angivna språket. Ett annat språkkrav i annonsen är ett hårt nej. |
+| Svenska | Modersmål | CV 2021: goda kunskaper i skrift, mycket goda i tal. |
+| Engelska | Bra | Kandidatens egen uppgift 2026-11. CV 2021 säger grundläggande i tal och skrift. Krav på flytande eller avancerad engelska ger FLAG, inte FAIL. |
 
 ## Education
 
 | Degree | Period | Institution | Key Topics |
 |--------|--------|-------------|------------|
-| Skogslinje | årtal ej angivet | Ösby | Skog. Inget betyg, examensarbete eller kurslista är angivet. |
-| Hantverk/finsnickeri | årtal ej angivet | NVU Fagersta | Hantverk och finsnickeri. Inget betyg eller kurslista är angivet. |
+| Hantverk, finsnickeri/möbelsnickare | aug 2010 - dec 2012 (ca 2,5 år) | NVU Brinellskolan, Fagersta | Möbelsnickeri. Ett CV anger "ej avslutad". Inga betyg angivna. |
+| Skogslinje | aug 2009 - jun 2010 (1 år) | Ösby naturbruksgymnasium, Sala | Traktor, motorsåg, röjsåg. Inga betyg angivna. |
 
 ## Professional Experience
 
-### Skötare, demensavdelning - Forsagården (datum ej angivet)
-Forsa
-- Arbetade som skötare på en demensavdelning.
-- Inga fler arbetsuppgifter, schemat, omfattningen eller resultat är dokumenterade. Lägg inte till några.
+### Skötare, demensavdelning - Forsagården (maj 2018 - sep 2018, därefter timanställd vid behov)
+Forsa, Hudiksvalls kommun
+- Sommarvikarie maj-sep 2018, därefter timanställd och inringd vid personalbrist (det äldre CV:t anger pågående, 2 år och 1 månad). Hitta inte på ett slutdatum.
+- Hjälpte brukarna med bland annat städning, tvätt och hygien.
+- Inga fler arbetsuppgifter, omfattning eller resultat är dokumenterade. Lägg inte till några.
 
-<!-- Add more roles only when the candidate states them. Butik, städ, kök and restaurang are targets, not jobs held. -->
+### Abonnemangsförsäljare (mindre än 1 års erfarenhet)
+- Arbetsgivare, datum och uppgifter är inte angivna.
+
+### IT-tekniker/datatekniker (mindre än 1 års erfarenhet)
+- Arbetsgivare, datum och uppgifter är inte angivna.
+
+### Konsthantverkare (mindre än 1 års erfarenhet)
+- Arbetsgivare, datum och uppgifter är inte angivna.
+
+<!-- Add more roles only when the candidate states them. Butik, kök and restaurang are targets, not jobs held. -->
 
 ## Independent Projects
 Inga angivna.
@@ -49,14 +60,18 @@ Inga angivna.
 ## Technical Skills
 
 ### Programming & ML
-Inga angivna. Hitta inte på programmering, ramverk eller verktyg.
+Självlärd inom data/IT, "både programmering och skruva med dom" (kandidatens egna ord). Inga språk, ramverk eller projekt är angivna. Hitta inte på några.
 
 ### Domain Expertise
-- Skötare på demensavdelning (Forsagården, Forsa). Bara rollen är dokumenterad.
-- Skogslinje (Ösby) och hantverk/finsnickeri (NVU Fagersta), utan angivna årtal eller betyg.
+- Omsorg: skötare på demensavdelning (Forsagården, Forsa), med städning, tvätt och hygien.
+- Försäljning: abonnemangsförsäljare, under 1 år.
+- Hantverk: finsnickeri/möbelsnickeri (NVU Brinellskolan) och konsthantverkare, under 1 år.
+- Skog: traktor, motorsåg och röjsåg (Ösby).
+- IT: IT-tekniker under 1 år, plus självlärd.
+- Intresse för bil- och lastbilsmekanik (intresse, ingen utbildning angiven).
 
 ### Software & Tools
-Inga angivna.
+Inga specifika program angivna.
 
 ## Publications
 Inga angivna.

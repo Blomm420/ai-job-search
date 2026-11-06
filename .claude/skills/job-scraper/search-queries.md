@@ -12,7 +12,7 @@ The `site:` query templates in this file are the **WebSearch fallback** — for 
 
 ## This fork's market
 
-Queries are in Swedish, the only declared language. Area: Växjö / Norrhult, Kronobergs län. Targets: butik, städ, kök, restaurang, service. Deltid and heltid both count. Drop anything that requires a driver's license or a car.
+Queries are in Swedish. English is also declared, so a posting that requires English is not excluded (fluent or advanced English gets a flag). Area: Växjö / Norrhult, Kronobergs län. Targets: butik, städ, kök, restaurang, service. Deltid and heltid both count. Drop anything that requires a driver's license or a car.
 
 ### Two separate result lists
 

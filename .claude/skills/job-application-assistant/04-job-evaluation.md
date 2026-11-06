@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** Svenska som modersmål. Skötare på demensavdelning (Forsagården, Forsa; bara titeln är dokumenterad). Utbildning: skogslinje på Ösby, hantverk/finsnickeri på NVU Fagersta.
-**Moderate match areas:** Servicejobb där den dokumenterade omsorgsrollen är ett ärligt argument, utan att döpas om till butiks- eller restaurangerfarenhet.
-**Weak match areas:** Ingen dokumenterad erfarenhet av butik, städ, kök eller restaurang. Inget körkort och ingen bil. Inga andra språk. Inga angivna verktyg, betyg, årtal eller detaljerade arbetsuppgifter.
+**Strong match areas:** Svenska som modersmål, engelska. Skötare på demensavdelning (Forsagården, Forsa) med städning, tvätt och hygien. Abonnemangsförsäljning (under 1 år). Utbildning: hantverk/finsnickeri på NVU Brinellskolan, skogslinje på Ösby (traktor, motorsåg, röjsåg).
+**Moderate match areas:** Städ- och servicejobb, där städning från skötarjobbet är ett ärligt argument. Butik och försäljning, där abonnemangsförsäljningen räknas. Praktiska jobb där hantverket räknas. Kort IT-erfarenhet.
+**Weak match areas:** Ingen dokumenterad erfarenhet av butik, kök eller restaurang. Inget körkort och ingen bil. Inga andra språk än svenska och engelska. Alla jobb utom Forsagården var kortare än 1 år och saknar arbetsgivare och datum. Inga angivna betyg eller program.
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
