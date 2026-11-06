@@ -43,7 +43,7 @@ Forsa, Hudiksvalls kommun
 - Hjälpte brukarna med bland annat städning, tvätt och hygien.
 - Inga fler arbetsuppgifter, omfattning eller resultat är dokumenterade. Lägg inte till några.
 
-### Allt i allo, bensinstation - Macken, Bernshammar (2021)
+### Allt i allo, bensinstation - Macken, Bernshammar (2020-2021)
 Kolsva, Västmanland
 - Skötte kassan och skötte macken som allt i allo (kandidatens egen uppgift 2026-11).
 - Ägaren har avlidit, så det finns ingen referens därifrån. Månader, anställningsform och fler uppgifter är inte angivna. Hitta inte på dem.

@@ -49,7 +49,7 @@ Source: the candidate's own CVs (2020 and 2021). Do not invent duties, team size
 - **Skötare, demensavdelning** (maj 2018 - sep 2018 som sommarvikarie, därefter timanställd vid behov) - **Forsagården** (Forsa, Hudiksvalls kommun)
   - Dokumenterat: hjälpte brukarna med bland annat städning, tvätt och hygien.
   - CV:t från 2021 anger maj-sep 2018. Det äldre CV:t anger maj 2018 - pågående (2 år, 1 månad) som timanställd och sommarvikarie, med möjlighet att bli inringd vid personalbrist. Skriv "maj 2018 - sep 2018, därefter timanställd vid behov" och hitta inte på ett slutdatum.
-- **Allt i allo, bensinstation** (2021) - **Macken, Bernshammar** (Kolsva, Västmanland)
+- **Allt i allo, bensinstation** (2020-2021) - **Macken, Bernshammar** (Kolsva, Västmanland)
   - Kandidatens egen uppgift 2026-11: skötte kassan och skötte macken som allt i allo. Ägaren har avlidit, så det finns ingen referens därifrån. Månader, anställningsform och fler uppgifter är inte angivna. Hitta inte på dem.
 - **Abonnemangsförsäljare** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
 - **IT-tekniker/datatekniker** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
