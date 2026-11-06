@@ -52,6 +52,7 @@ Source: the candidate's own CVs (2020 and 2021). Do not invent duties, team size
 - **Allt i allo, bensinstation** (2020-2021) - **Macken, Bernshammar** (Kolsva, Västmanland)
   - Kandidatens egen uppgift 2026-11: skötte kassan och skötte macken som allt i allo. Ägaren har avlidit och verksamheten är nedlagd (kandidatens uppgift), så det finns ingen referens därifrån. Månader, anställningsform och fler uppgifter är inte angivna. Hitta inte på dem.
 - **Abonnemangsförsäljare** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
+  - Kandidaten säger att han har lång vana att sälja utöver detta, men utan arbetsgivare som kan anges. Skriv "van att sälja" som en förmåga. Skriv aldrig en säljartjänst, arbetsgivare eller period som inte är dokumenterad.
 - **IT-tekniker/datatekniker** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
 - **Konsthantverkare** (mindre än 1 års erfarenhet; arbetsgivare och datum ej angivna)
   - För de tre rollerna ovan är bara titel och omfattning (under 1 år) dokumenterade. Hitta inte på arbetsgivare, datum eller uppgifter.

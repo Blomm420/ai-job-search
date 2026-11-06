@@ -69,7 +69,7 @@ Självlärd inom data/IT, "både programmering och skruva med dom" (kandidatens 
 
 ### Domain Expertise
 - Omsorg: skötare på demensavdelning (Forsagården, Forsa), med städning, tvätt och hygien.
-- Försäljning: abonnemangsförsäljare, under 1 år.
+- Försäljning: abonnemangsförsäljare, under 1 år. Kandidaten säger att han är van att sälja sedan länge, utan arbetsgivare som kan anges. Skriv "van att sälja" som förmåga, aldrig som en egen tjänst eller period.
 - Hantverk: finsnickeri/möbelsnickeri (NVU Brinellskolan) och konsthantverkare, under 1 år.
 - Skog: traktor, motorsåg och röjsåg (Ösby).
 - IT: IT-tekniker under 1 år, plus självlärd.
