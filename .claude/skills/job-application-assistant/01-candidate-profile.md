@@ -46,7 +46,7 @@ Forsa, Hudiksvalls kommun
 ### Allt i allo, bensinstation - Macken, Bernshammar (2020-2021)
 Kolsva, Västmanland
 - Skötte kassan och skötte macken som allt i allo (kandidatens egen uppgift 2026-11).
-- Ägaren har avlidit, så det finns ingen referens därifrån. Månader, anställningsform och fler uppgifter är inte angivna. Hitta inte på dem.
+- Ägaren har avlidit och verksamheten är nedlagd (kandidatens uppgift), så det finns ingen referens därifrån. Månader, anställningsform och fler uppgifter är inte angivna. Hitta inte på dem.
 
 ### Abonnemangsförsäljare (mindre än 1 års erfarenhet)
 - Arbetsgivare, datum och uppgifter är inte angivna.
