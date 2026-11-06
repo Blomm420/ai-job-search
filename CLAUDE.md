@@ -30,7 +30,7 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
   | Language | Level |
   |----------|-------|
   | Svenska | Modersmål |
-  | Engelska | Bra (kandidatens egen uppgift 2026-11; CV från 2021 säger grundläggande i tal och skrift) |
+  | Engelska | Gymnasienivå (kandidatens egen uppgift 2026-11) |
   <!-- Swedish and English are declared. A posting that requires any other language fails the Language Gate in 04-job-evaluation.md. A posting that asks for fluent or advanced English gets FLAG, not FAIL. -->
 - **CV language:** Swedish
 - **Cover letter language:** Swedish

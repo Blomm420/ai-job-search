@@ -26,7 +26,7 @@ framework_version: 1.1.1
 | Language | Level | Notes |
 |----------|-------|-------|
 | Svenska | Modersmål | CV 2021: goda kunskaper i skrift, mycket goda i tal. |
-| Engelska | Bra | Kandidatens egen uppgift 2026-11. CV 2021 säger grundläggande i tal och skrift. Krav på flytande eller avancerad engelska ger FLAG, inte FAIL. |
+| Engelska | Gymnasienivå | Kandidatens egen uppgift 2026-11. Krav på flytande eller avancerad engelska ger FLAG, inte FAIL. |
 
 ## Education
 

@@ -42,7 +42,7 @@ Keep answers to 1-2 minutes. Be specific. End with what you learned or would do 
 **Butik, kök, restaurang:** "Det har jag inte arbetat med. Men jag har sålt abonnemang, och på Forsagården hjälpte jag brukarna med städning, tvätt och hygien."
 **Städ:** Städning ingick i skötarjobbet på Forsagården. Påstå inte mer än så.
 **Körkort:** "Nej. Jag har inget körkort och ingen bil. Jag åker kollektivt."
-**Andra språk:** "Jag har svenska som modersmål och kan engelska." Påstå inte en högre engelsknivå än kandidaten anger.
+**Andra språk:** "Jag har svenska som modersmål och engelska på gymnasienivå." Påstå inte en högre nivå.
 **Kväll, helg, natt:** Inte angivet. Svara inte åt kandidaten.
 
 <!-- Add more STAR examples only from details the candidate actually supplies. -->
